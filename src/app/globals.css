@@ -1,0 +1,425 @@
+@import "tailwindcss";
+
+/*
+ * HATERS MARKETING — design tokens
+ * Source of truth: brand kit v1.0 (07-colors/colors.json, brand guide p.6–7).
+ * Black and cream carry every layout. Red is the label, one headline line, one button.
+ */
+:root {
+  --brand-black: #0c0c0c;
+  --brand-cream: #f1ede4;
+  --brand-red: #e8432d;
+  /* Not a brand colour: an accessible ink for SMALL red text on cream only (5.3:1). */
+  --brand-red-ink: #b5301c;
+  --font-display: var(--font-anton), "Anton", Impact, "Arial Narrow", sans-serif;
+  --font-body: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --focus-ring: var(--brand-red);
+  --header-h: 4.5rem;
+}
+
+@theme {
+  --color-*: initial;
+  --color-ink: #0c0c0c;
+  --color-cream: #f1ede4;
+  --color-red: #e8432d;
+  --color-red-ink: #b5301c;
+
+  --font-*: initial;
+  --font-display: var(--font-anton), "Anton", Impact, "Arial Narrow", sans-serif;
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --ease-editorial: cubic-bezier(0.2, 0.7, 0, 1);
+}
+
+/* ---------- Base ---------- */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: var(--brand-black);
+  color: var(--brand-cream);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  font-feature-settings: "ss01" 0;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--brand-red);
+  color: var(--brand-black);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+/* Red fields switch the focus ring to black so it stays visible (4.9:1). */
+.on-red {
+  --focus-ring: var(--brand-black);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---------- Layout ---------- */
+
+@utility shell {
+  width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3.5rem);
+}
+
+@utility grid-12 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: clamp(1rem, 2vw, 1.75rem);
+
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@utility section-y {
+  padding-block: clamp(4.5rem, 10vw, 9rem);
+}
+
+/* ---------- Type ---------- */
+
+/* Anton: always capitals, tight leading, full stop at the end (brand guide p.7). */
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 0.002em;
+  /* Room for İ dots and Ş/Ç cedillas on tight leading. */
+  padding-block: 0.06em 0.02em;
+  text-wrap: balance;
+}
+
+@utility t-mega {
+  font-size: clamp(3.25rem, 14vw, 13rem);
+}
+
+@utility t-xxl {
+  font-size: clamp(3rem, 10.5vw, 9.5rem);
+}
+
+@utility t-xl {
+  font-size: clamp(2.6rem, 7vw, 6.25rem);
+}
+
+@utility t-lg {
+  font-size: clamp(2.1rem, 4.6vw, 4.25rem);
+}
+
+@utility t-md {
+  font-size: clamp(1.65rem, 2.8vw, 2.6rem);
+}
+
+@utility t-sm {
+  font-size: clamp(1.35rem, 1.9vw, 1.75rem);
+}
+
+@utility lead {
+  font-size: clamp(1.125rem, 1.55vw, 1.375rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+/* Spaced caps label, as on the campaign posters ("M E T A  R E K L A M"). */
+@utility eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+@utility prose-copy {
+  max-width: 64ch;
+  text-wrap: pretty;
+
+  & p + p {
+    margin-top: 1em;
+  }
+}
+
+/* ---------- Controls ---------- */
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.5rem 0.8rem;
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 0;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}
+
+/* Black on red for button-sized type (cream on red is for large type only). */
+@utility btn-red {
+  background: var(--brand-red);
+  color: var(--brand-black);
+  border-color: var(--brand-red);
+
+  &:hover:not(:disabled) {
+    background: var(--brand-cream);
+    border-color: var(--brand-cream);
+  }
+}
+
+@utility btn-ink {
+  background: var(--brand-black);
+  color: var(--brand-cream);
+  border-color: var(--brand-black);
+
+  &:hover:not(:disabled) {
+    background: var(--brand-cream);
+    color: var(--brand-black);
+  }
+}
+
+@utility btn-ghost-cream {
+  color: var(--brand-cream);
+  border-color: color-mix(in srgb, var(--brand-cream) 55%, transparent);
+
+  &:hover {
+    background: var(--brand-cream);
+    color: var(--brand-black);
+    border-color: var(--brand-cream);
+  }
+}
+
+@utility btn-ghost-ink {
+  color: var(--brand-black);
+  border-color: var(--brand-black);
+
+  &:hover {
+    background: var(--brand-black);
+    color: var(--brand-cream);
+  }
+}
+
+@utility link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  transition: text-decoration-thickness 150ms ease;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+@utility sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+
+  &:focus {
+    width: auto;
+    height: auto;
+    clip-path: none;
+  }
+}
+
+/* ---------- Motion ---------- */
+
+/* Opening reveal: each headline line rises out of its own mask. */
+.mask-line {
+  display: block;
+  overflow: hidden;
+  padding-block: 0.1em 0.03em;
+  margin-block: -0.1em -0.03em;
+}
+
+.mask-line > span {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mask-line > span {
+    animation: mask-rise 760ms var(--ease-editorial) both;
+    animation-delay: calc(var(--line, 0) * 110ms + 60ms);
+  }
+
+  .fade-in {
+    animation: fade-up 700ms var(--ease-editorial) both;
+    animation-delay: var(--delay, 300ms);
+  }
+}
+
+@keyframes mask-rise {
+  from {
+    transform: translateY(108%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * Scroll-linked reveals are pure CSS. Browsers without scroll-driven animations,
+ * and visitors who prefer reduced motion, simply see the content in place.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-reveal] {
+      animation: fade-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+
+    [data-drift] {
+      animation: drift linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
+
+    /* The reversal: a line arrives upside down and rights itself as it is read. */
+    [data-upright] {
+      transform-origin: 50% 55%;
+      animation: upright linear both;
+      animation-timeline: view();
+      animation-range: entry 20% cover 42%;
+    }
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 6%, 0);
+  }
+  to {
+    transform: translate3d(0, -6%, 0);
+  }
+}
+
+@keyframes upright {
+  from {
+    transform: perspective(900px) rotateX(180deg);
+    opacity: 0.35;
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    transform: perspective(900px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-cue::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 2.75rem;
+    margin-top: 0.75rem;
+    background: currentColor;
+    transform-origin: top;
+    animation: cue 1.8s var(--ease-editorial) infinite;
+  }
+}
+
+@keyframes cue {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  51% {
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+/* Native details/summary accordion: no marker, keyboard and screen reader friendly. */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  details::details-content {
+    transition:
+      content-visibility 260ms allow-discrete,
+      height 260ms var(--ease-editorial);
+    height: 0;
+    overflow: clip;
+  }
+
+  details[open]::details-content {
+    height: auto;
+  }
+
+  @supports (interpolate-size: allow-keywords) {
+    :root {
+      interpolate-size: allow-keywords;
+    }
+  }
+}
