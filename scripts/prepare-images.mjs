@@ -78,6 +78,41 @@ async function sampleColour(input, [x, y]) {
   return { r, g, b };
 }
 
+/**
+ * Cuts a red object out of a flat cream backdrop. Alpha comes from how much redder a
+ * pixel is than the backdrop; edge pixels are then "un-mixed" from the cream so the
+ * cut-out sits cleanly on black without a light halo. Shadows (grey, unsaturated)
+ * fall away with the backdrop.
+ */
+async function cutOutRed(input, box, dest, { lo = 26, hi = 66 } = {}) {
+  const { data, info } = await sharp(input).extract(box).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const bg = await sampleColour(input, [box.left + 8, box.top + 8]);
+  const out = Buffer.alloc(info.width * info.height * 4);
+  for (let i = 0, o = 0; i < data.length; i += 3, o += 4) {
+    const r = data[i], g = data[i + 1], b = data[i + 2];
+    const redness = r - (g + b) / 2 - (bg.r - (bg.g + bg.b) / 2);
+    let a = Math.min(1, Math.max(0, (redness - lo) / (hi - lo)));
+    a = a * a * (3 - 2 * a); // smoothstep
+    if (a > 0) {
+      out[o] = Math.min(255, Math.max(0, Math.round((r - (1 - a) * bg.r) / a)));
+      out[o + 1] = Math.min(255, Math.max(0, Math.round((g - (1 - a) * bg.g) / a)));
+      out[o + 2] = Math.min(255, Math.max(0, Math.round((b - (1 - a) * bg.b) / a)));
+    }
+    out[o + 3] = Math.round(a * 255);
+  }
+  await sharp(out, { raw: { width: info.width, height: info.height, channels: 4 } })
+    .trim({ threshold: 0 })
+    .png({ compressionLevel: 9 })
+    .toFile(dest);
+}
+
+await cutOutRed(
+  path.join(source, 'Bir yerde takılan düğüm-9.png'),
+  { left: 0, top: 600, width: 1122, height: 300 },
+  path.join(out, 'objects', 'kirmizi-dugum-dekupe.png'),
+);
+console.log('cutout kirmizi-dugum-dekupe');
+
 for (const [name, file, box, masks = []] of objects) {
   const input = path.join(source, file);
   const dest = path.join(out, 'objects', `${name}.jpg`);

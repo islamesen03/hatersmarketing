@@ -21,7 +21,8 @@ export function Diagnoses() {
               <li key={item.label} className="grid-12 items-center gap-y-8">
                 <figure
                   className={cn(
-                    "col-span-4 overflow-hidden md:col-span-5",
+                    // clip (not hidden) so the image's view-timeline drift tracks the page
+                    "col-span-4 overflow-clip md:col-span-5",
                     flip ? "md:col-start-8 md:row-start-1" : "md:col-start-1",
                     item.image.tone === "red" ? "bg-red" : "bg-cream",
                   )}

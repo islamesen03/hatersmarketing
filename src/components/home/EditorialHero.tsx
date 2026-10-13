@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { UntyingKnot } from "./UntyingKnot";
 import { hero } from "@/content/home";
 import { cta } from "@/content/site";
 import { Headline } from "../Headline";
@@ -8,7 +8,9 @@ import { Arrow } from "../icons";
 
 export function EditorialHero() {
   return (
-    <section aria-labelledby="hero-title" className="relative overflow-hidden bg-ink text-cream">
+    // overflow-clip, not overflow-hidden: "hidden" makes a scroll container, which would
+    // capture the lace's scroll-driven view timeline and freeze it.
+    <section aria-labelledby="hero-title" className="relative overflow-clip bg-ink text-cream">
       <div className="shell grid-12 min-h-[calc(100svh-var(--header-h))] content-between gap-y-12 pt-10 pb-10 md:pt-14 lg:pb-14">
         <div className="col-span-4 md:col-span-12">
           <div className="flex items-start justify-between gap-6">
@@ -48,18 +50,8 @@ export function EditorialHero() {
           className="fade-in col-span-4 self-end md:col-span-7 md:-mr-[clamp(1rem,4vw,3.5rem)]"
           style={{ ["--delay" as string]: "560ms" }}
         >
-          <div className="overflow-hidden bg-cream">
-            <Image
-              src={hero.image.src}
-              alt={hero.image.alt}
-              width={hero.image.width}
-              height={hero.image.height}
-              priority
-              sizes="(min-width: 768px) 60vw, 100vw"
-              className="h-auto w-full"
-            />
-          </div>
-          <figcaption className="mt-3 flex items-baseline justify-between gap-4 text-sm text-cream/70 md:pr-[clamp(1rem,4vw,3.5rem)]">
+          <UntyingKnot image={hero.image} sizes="(min-width: 768px) 60vw, 100vw" />
+          <figcaption className="mt-6 flex items-baseline justify-between gap-4 text-sm text-cream/70 md:pr-[clamp(1rem,4vw,3.5rem)]">
             <span>{hero.caption}</span>
             <span className="eyebrow text-[0.6875rem] text-cream/60">27 / Tanışalım</span>
           </figcaption>

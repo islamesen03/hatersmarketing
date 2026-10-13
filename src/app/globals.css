@@ -361,6 +361,93 @@ img {
   }
 }
 
+/*
+ * Hero lace (UntyingKnot). Percentages are positions along the cut-out:
+ * the knot sits at ~40–62%. Each strand fades out only where the knot layer
+ * is fully opaque, so the stacked layers reproduce the photo exactly at rest.
+ */
+.knot__layer {
+  object-fit: contain;
+  will-change: transform;
+}
+
+/* The knot's loops span ~40–61% of the width. Each strand layer ends (soft tail)
+   on plain lace before the loops begin, so it never carries a piece of the knot;
+   the knot layer keeps a short lace stub on each side and covers those tails
+   at rest, so nothing reads as a seam once they separate. */
+.knot__left {
+  mask-image: linear-gradient(to right, #000 35%, transparent 39%);
+}
+
+.knot__right {
+  mask-image: linear-gradient(to right, transparent 62%, #000 66%);
+}
+
+.knot__core {
+  mask-image: linear-gradient(to right, transparent 31%, #000 35%, #000 66%, transparent 70%);
+  transform-origin: 51% 48%;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .knot {
+      view-timeline-name: --knot;
+    }
+
+    .knot__left,
+    .knot__right,
+    .knot__core {
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --knot;
+      /* Tied while the lace sits in the lower half of the screen (page load on any
+         viewport); unties as it rises and is done while still well in view. */
+      animation-range: contain 45% contain 85%;
+    }
+
+    .knot__left {
+      animation-name: knot-left;
+    }
+
+    .knot__right {
+      animation-name: knot-right;
+    }
+
+    .knot__core {
+      animation-name: knot-core;
+    }
+  }
+}
+
+/* The ends let go early (first ~15%), so the moment where both soft edges
+   overlap is brief; the knot then keeps turning and shrinking. */
+@keyframes knot-left {
+  15% {
+    transform: translate3d(-8%, -1%, 0) rotate(-1deg);
+  }
+  to {
+    transform: translate3d(-10%, -2%, 0) rotate(-1.5deg);
+  }
+}
+
+@keyframes knot-right {
+  15% {
+    transform: translate3d(8%, -2%, 0) rotate(-1.5deg);
+  }
+  to {
+    transform: translate3d(10%, -4%, 0) rotate(-2deg);
+  }
+}
+
+@keyframes knot-core {
+  10% {
+    transform: none;
+  }
+  to {
+    transform: rotate(-12deg) scale(0.76);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .scroll-cue::after {
     content: "";

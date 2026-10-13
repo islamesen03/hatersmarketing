@@ -7,7 +7,7 @@ export const hero = {
   lead: "İyi görünen işler yetmez. Ne değiştirdiğine bakalım.",
   body: "Strateji, reklam kreatifi ve Meta reklam yönetimini tek bir soruya bağlıyoruz: bu iş, satışa ne kattı?",
   secondary: { label: "Nasıl çalıştığımızı gör", href: "/yaklasimimiz" },
-  image: objects.knot,
+  image: objects.knotCutout,
   caption: "Bir yerde takılıyor. Birlikte çözelim.",
 };
 

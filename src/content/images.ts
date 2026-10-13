@@ -12,6 +12,14 @@ export const objects = {
     height: 300,
     tone: "cream",
   },
+  /** Background removed (scripts/prepare-images.mjs → cutOutRed), for use on black. */
+  knotCutout: {
+    src: "/images/objects/kirmizi-dugum-dekupe.png",
+    alt: "Ortasından sıkıca düğümlenmiş kırmızı bir ayakkabı bağcığı.",
+    width: 1068,
+    height: 213,
+    tone: "ink",
+  },
   heartBox: {
     src: "/images/objects/kalp-ve-kutu.jpg",
     alt: "Boş bir karton kutudan yükselen kırmızı, kalp şeklinde folyo balon.",

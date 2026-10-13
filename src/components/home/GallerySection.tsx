@@ -5,7 +5,7 @@ import { Arrow } from "../icons";
 
 export function GallerySection() {
   return (
-    <section aria-labelledby="gallery-title" className="section-y overflow-hidden bg-ink text-cream">
+    <section aria-labelledby="gallery-title" className="section-y overflow-clip bg-ink text-cream">
       <div className="shell">
         <div className="grid-12 gap-y-6">
           <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Kendi kampanya serimiz</p>
