@@ -8,7 +8,12 @@
 
 export type NavItem = { label: string; href: string };
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+// Explicit domain first; on Vercel fall back to the project's production domain.
+const vercelProduction = process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL;
+const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (vercelProduction ? `https://${vercelProduction}` : "http://localhost:3000")
+).replace(/\/$/, "");
 
 export const site = {
   name: "Haters Marketing",
