@@ -21,7 +21,7 @@ export function CTASection({
   return (
     <section aria-labelledby="closer-title" className="on-red section-y bg-red text-ink">
       <div className="shell">
-        <Headline id="closer-title" lines={headline} tone="on-red" className="t-xxl max-w-[14ch]" />
+        <Headline id="closer-title" lines={headline} tone="on-red" className="t-xxl max-w-[14ch]" enter="sides" />
         <div className="mt-12 flex flex-col gap-8 md:mt-16 md:flex-row md:items-end md:justify-between">
           <p className="lead max-w-xl font-semibold">{body}</p>
           <ButtonLink href={action.href} variant="ink" track={track} className="self-start md:self-auto">

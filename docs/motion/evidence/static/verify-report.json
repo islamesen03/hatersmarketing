@@ -1,0 +1,176 @@
+{
+  "generatedAt": "2026-10-15T02:50:00.196Z",
+  "rows": [
+    {
+      "scene": "heart-box",
+      "layer": "box-rear",
+      "size": "617x454",
+      "offset": "0,0",
+      "pngKB": "120",
+      "transparent": "66%",
+      "softEdge": "30.1%"
+    },
+    {
+      "scene": "heart-box",
+      "layer": "balloon",
+      "size": "266x443",
+      "offset": "213,22",
+      "pngKB": "101",
+      "transparent": "60%",
+      "softEdge": "40.4%"
+    },
+    {
+      "scene": "heart-box",
+      "layer": "box-front",
+      "size": "616x353",
+      "offset": "0,297",
+      "pngKB": "115",
+      "transparent": "59%",
+      "softEdge": "41.2%"
+    },
+    {
+      "scene": "heart-box",
+      "layer": "TOTAL",
+      "size": "640x660",
+      "offset": "",
+      "pngKB": "336",
+      "transparent": "webp 54KB / avif 37KB @576",
+      "softEdge": "webp 33KB / avif 23KB @390"
+    },
+    {
+      "scene": "cards",
+      "layer": "stack-body",
+      "size": "531x397",
+      "offset": "310,0",
+      "pngKB": "174",
+      "transparent": "36%",
+      "softEdge": "64.1%"
+    },
+    {
+      "scene": "cards",
+      "layer": "top-card",
+      "size": "523x239",
+      "offset": "313,0",
+      "pngKB": "49",
+      "transparent": "44%",
+      "softEdge": "55.6%"
+    },
+    {
+      "scene": "cards",
+      "layer": "red-card",
+      "size": "538x341",
+      "offset": "22,206",
+      "pngKB": "117",
+      "transparent": "51%",
+      "softEdge": "49.0%"
+    },
+    {
+      "scene": "cards",
+      "layer": "TOTAL",
+      "size": "860x572",
+      "offset": "",
+      "pngKB": "340",
+      "transparent": "webp 28KB / avif 26KB @576",
+      "softEdge": "webp 17KB / avif 15KB @390"
+    },
+    {
+      "scene": "owl",
+      "layer": "owl",
+      "size": "735x865",
+      "offset": "57,0",
+      "pngKB": "1122",
+      "transparent": "20%",
+      "softEdge": "0.8%"
+    },
+    {
+      "scene": "owl",
+      "layer": "lid-viewer-left",
+      "size": "183x131",
+      "offset": "307,293",
+      "pngKB": "46",
+      "transparent": "26%",
+      "softEdge": "38.6%"
+    },
+    {
+      "scene": "owl",
+      "layer": "lid-viewer-right",
+      "size": "172x133",
+      "offset": "620,215",
+      "pngKB": "43",
+      "transparent": "24%",
+      "softEdge": "39.1%"
+    },
+    {
+      "scene": "owl",
+      "layer": "TOTAL",
+      "size": "792x865",
+      "offset": "",
+      "pngKB": "1211",
+      "transparent": "webp 93KB / avif 70KB @576",
+      "softEdge": "webp 49KB / avif 39KB @390"
+    },
+    {
+      "scene": "pawns",
+      "layer": "pawn-1",
+      "size": "154x245",
+      "offset": "33,16",
+      "pngKB": "29",
+      "transparent": "46%",
+      "softEdge": "53.2%"
+    },
+    {
+      "scene": "pawns",
+      "layer": "pawn-2",
+      "size": "171x249",
+      "offset": "183,16",
+      "pngKB": "29",
+      "transparent": "50%",
+      "softEdge": "49.0%"
+    },
+    {
+      "scene": "pawns",
+      "layer": "pawn-3",
+      "size": "172x249",
+      "offset": "350,16",
+      "pngKB": "29",
+      "transparent": "50%",
+      "softEdge": "48.7%"
+    },
+    {
+      "scene": "pawns",
+      "layer": "pawn-4",
+      "size": "170x250",
+      "offset": "518,16",
+      "pngKB": "29",
+      "transparent": "50%",
+      "softEdge": "49.3%"
+    },
+    {
+      "scene": "pawns",
+      "layer": "pawn-5",
+      "size": "170x253",
+      "offset": "684,16",
+      "pngKB": "30",
+      "transparent": "49%",
+      "softEdge": "49.9%"
+    },
+    {
+      "scene": "pawns",
+      "layer": "pawn-red",
+      "size": "192x250",
+      "offset": "850,16",
+      "pngKB": "40",
+      "transparent": "53%",
+      "softEdge": "45.5%"
+    },
+    {
+      "scene": "pawns",
+      "layer": "TOTAL",
+      "size": "1042x270",
+      "offset": "",
+      "pngKB": "187",
+      "transparent": "webp 24KB / avif 16KB @576",
+      "softEdge": "webp 15KB / avif 11KB @390"
+    }
+  ]
+}

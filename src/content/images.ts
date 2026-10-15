@@ -26,6 +26,7 @@ export const objects = {
     width: 640,
     height: 660,
     tone: "cream",
+    scene: "heart-box",
   },
   cards: {
     src: "/images/objects/kartlar.jpg",
@@ -33,6 +34,7 @@ export const objects = {
     width: 860,
     height: 572,
     tone: "cream",
+    scene: "cards",
   },
   owl: {
     src: "/images/objects/baykus-kirmizi.jpg",
@@ -40,6 +42,7 @@ export const objects = {
     width: 692,
     height: 715,
     tone: "red",
+    scene: "owl",
   },
   pawns: {
     src: "/images/objects/piyonlar.jpg",
@@ -47,6 +50,7 @@ export const objects = {
     width: 1042,
     height: 270,
     tone: "cream",
+    scene: "pawns",
   },
   notebooks: {
     src: "/images/objects/defterler.jpg",

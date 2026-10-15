@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { CTASection } from "@/components/CTASection";
@@ -23,7 +24,7 @@ const caseStudyOutline = [
 
 export default function WorkPage() {
   return (
-    <>
+    <MotionBoundary>
       <PageHero
         eyebrow="İşlerimiz"
         headline={[{ text: "Gösterişe değil." }, { text: "Etkiye bak.", accent: true }]}
@@ -40,7 +41,7 @@ export default function WorkPage() {
         <div className="shell grid-12 gap-y-12">
           <div className="col-span-4 md:col-span-5">
             <p className="eyebrow">Vaka çalışmaları</p>
-            <h2 id="cases" className="display t-lg mt-6">
+            <h2 id="cases" className="display t-lg mt-6" data-enter="left">
               İzinle, kanıtla.
             </h2>
             <p className="mt-6 max-w-md text-ink/80">
@@ -67,7 +68,7 @@ export default function WorkPage() {
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Konsept çalışmaları</p>
             <div className="col-span-4 md:col-span-9">
-              <h2 id="concepts" className="display t-xl">
+              <h2 id="concepts" className="display t-xl" data-enter="left">
                 Kendi sesimizle.
               </h2>
               <p className="mt-6 max-w-2xl text-cream/80">
@@ -110,6 +111,6 @@ export default function WorkPage() {
         track="work-closer"
       />
       <JsonLd data={breadcrumbJsonLd([{ name: "İşlerimiz", path: "/islerimiz" }])} />
-    </>
+    </MotionBoundary>
   );
 }

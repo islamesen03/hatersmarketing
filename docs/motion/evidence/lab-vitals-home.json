@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-10-15T03:36:30.693Z",
+  "runs": 3,
+  "builds": {
+    "baseline": "http://localhost:3300",
+    "branch": "http://localhost:3200"
+  },
+  "conditions": "Playwright Chromium, 390x844 @2x mobile emulation, CDP 4x CPU throttle, 400ms RTT / 400kbps, cold context per run; LCP/CLS read at load+4s before scrolling, CLS/long tasks also over a full scroll",
+  "results": {
+    "baseline": {
+      "/": {
+        "samples": [
+          {
+            "lcp": 3936,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 65,
+            "loadMs": 9044
+          },
+          {
+            "lcp": 3912,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 60,
+            "loadMs": 8999
+          },
+          {
+            "lcp": 3788,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 61,
+            "loadMs": 8977
+          }
+        ],
+        "median": {
+          "lcpMs": 3912,
+          "clsBeforeScroll": 0.0105,
+          "clsAfterScroll": 0.0105,
+          "longTaskMs": 61,
+          "loadMs": 8999,
+          "lcpEl": "IMG.knot__layer knot__left"
+        }
+      }
+    },
+    "branch": {
+      "/": {
+        "samples": [
+          {
+            "lcp": 4204,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 56,
+            "loadMs": 9647
+          },
+          {
+            "lcp": 4208,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 56,
+            "loadMs": 9642
+          },
+          {
+            "lcp": 4216,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 58,
+            "loadMs": 9674
+          }
+        ],
+        "median": {
+          "lcpMs": 4208,
+          "clsBeforeScroll": 0.0105,
+          "clsAfterScroll": 0.0105,
+          "longTaskMs": 56,
+          "loadMs": 9647,
+          "lcpEl": "IMG.knot__layer knot__left"
+        }
+      }
+    }
+  }
+}

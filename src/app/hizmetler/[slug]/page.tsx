@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Headline } from "@/components/Headline";
 import { PageHero } from "@/components/PageHero";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { FAQAccordion } from "@/components/FAQAccordion";
@@ -52,7 +54,7 @@ export default async function ServicePage({ params }: PageProps<"/hizmetler/[slu
   };
 
   return (
-    <>
+    <MotionBoundary>
       <PageHero
         eyebrow={`${service.number} / ${service.name}`}
         headline={service.headline}
@@ -68,7 +70,7 @@ export default async function ServicePage({ params }: PageProps<"/hizmetler/[slu
         <div className="shell grid-12 gap-y-14">
           <div className="col-span-4 md:col-span-5">
             <p className="eyebrow">Kimler için?</p>
-            <h2 id="for-whom" className="display t-lg mt-6">
+            <h2 id="for-whom" className="display t-lg mt-6" data-enter="left">
               Kendini burada gördüysen.
             </h2>
             <ul className="mt-10 space-y-5">
@@ -103,9 +105,13 @@ export default async function ServicePage({ params }: PageProps<"/hizmetler/[slu
         <div className="shell">
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Süreç</p>
-            <h2 id="how" className="display t-xl col-span-4 md:col-span-9">
-              Dinle. Sorgula. <span className="text-red">Sonra yap.</span>
-            </h2>
+            {/* The opposed-direction entrance: the statement from the left, the red line from the right. */}
+            <Headline
+              id="how"
+              lines={[{ text: "Dinle. Sorgula." }, { text: "Sonra yap.", accent: true }]}
+              className="t-xl col-span-4 md:col-span-9"
+              enter="sides"
+            />
           </div>
           <div className="mt-14 md:mt-20">
             <ProcessSteps tone="ink" />
@@ -117,7 +123,7 @@ export default async function ServicePage({ params }: PageProps<"/hizmetler/[slu
         <div className="shell grid-12 gap-y-14">
           <div className="col-span-4 md:col-span-5">
             <p className="eyebrow">Açık konuşalım</p>
-            <h2 id="notes" className="display t-lg mt-6">
+            <h2 id="notes" className="display t-lg mt-6" data-enter="left">
               Dürüst notlar.
             </h2>
             <ul className="mt-10 space-y-4">
@@ -177,6 +183,6 @@ export default async function ServicePage({ params }: PageProps<"/hizmetler/[slu
           { name: service.name, path },
         ])}
       />
-    </>
+    </MotionBoundary>
   );
 }

@@ -27,6 +27,9 @@ http://localhost:3000 adresinde açılır.
 | `npm test` | Form doğrulama birim testleri (Node test runner) |
 | `npm run images` | Referans afişlerden web görsellerini yeniden üretir |
 | `npm run brand:sync` | Brand kit'ten SVG/favicon/OG dosyalarını `public/`'e kopyalar |
+| `npm run test:e2e` | Tarayıcı testleri (Playwright): kaydırma sahneleri, başlık girişleri, azaltılmış hareket, erişilebilirlik. Önce `npm run build` |
+| `npm run motion:verify` | Hareket katmanlarını (alfa, boyut, ağırlık) doğrular ve durağan kompozitleri üretir |
+| `npm run motion:evidence` | Sahnelerin ilerleme adımlarında ekran görüntülerini alır (çalışan bir production sunucusu gerekir) |
 
 ## Ortam değişkenleri
 
@@ -67,9 +70,13 @@ src/components/     arayüz bileşenleri (home/, consent/)
 src/content/        içerik ve iş bilgileri
 src/lib/            seo, form doğrulama/teslimat, rate limit, onay, analitik
 public/brand/       brand kit'ten orijinal adlarıyla kopyalanan SVG, favicon, sosyal medya, renkler
-public/images/      afiş ve nesne görsel türevleri (scripts/prepare-images.mjs)
-scripts/            görsel ve marka varlığı senkron script'leri
+public/images/      afiş ve nesne görsel türevleri (scripts/prepare-images.mjs); motion/ altında sahne katmanları
+assets/motion-src/  sahne katmanlarının manifestosu (artboard, ofset, pivot, notlar)
+scripts/            görsel ve marka varlığı senkron script'leri; motion-layers/ katman çıkarma (Python, çevrimdışı)
+src/lib/motion/     ilerleme tanımı, yetenek tespiti, koreografi, göz kırpma durum makinesi, sahne denetleyicisi
 tests/              birim testleri
+e2e/                tarayıcı testleri (Playwright)
+docs/motion/        hareket spesifikasyonu, varlık manifestosu, teslim raporu ve kanıt görüntüleri
 ```
 
 ## Marka kuralları (kısa)
@@ -84,6 +91,7 @@ tests/              birim testleri
 - JSON-LD: `Organization` (yalnızca doğrulanmış alanlar), `Service`, `FAQPage`, `BreadcrumbList`.
 - `lang="tr"`, içeriğe geç bağlantısı, görünür odak halkası, klavye ile kullanılabilir mobil menü (Escape, odak tuzağı), `<details>` tabanlı SSS, erişilebilir form hataları (özet + alan bazlı, `aria-invalid`/`aria-describedby`), dokunma hedefleri ≥44 px.
 - Hareket: açılışta maskeli başlık animasyonu, saf CSS kaydırma animasyonları (`animation-timeline: view()`), `prefers-reduced-motion` ile kapanır; scroll-jacking ve preloader yok.
+- Kaydırma sahneleri (kalp ve kutu, baykuş, kartlar, piyonlar) ve yönlü başlık girişleri: sunucuda durağan görsel, istemcide `ViewTimeline` (yoksa paylaşılan kaydırma sürücüsü) ile Web Animations. Ayrıntılar: [docs/motion/MOTION_SPEC.md](docs/motion/MOTION_SPEC.md), katmanlar: [docs/motion/ASSET_MANIFEST.md](docs/motion/ASSET_MANIFEST.md), teslim raporu: [docs/motion/REPORT.md](docs/motion/REPORT.md).
 - Tüm sayfalar statik üretilir; görseller AVIF/WebP, lazy-load.
 
 ## Dağıtım

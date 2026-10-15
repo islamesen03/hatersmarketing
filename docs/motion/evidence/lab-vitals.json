@@ -1,0 +1,231 @@
+{
+  "generatedAt": "2026-10-15T03:32:43.175Z",
+  "runs": 3,
+  "builds": {
+    "baseline": "http://localhost:3300",
+    "branch": "http://localhost:3200"
+  },
+  "conditions": "Playwright Chromium, 390x844 @2x mobile emulation, CDP 4x CPU throttle, 400ms RTT / 400kbps, cold context per run; LCP/CLS read at load+4s before scrolling, CLS/long tasks also over a full scroll",
+  "results": {
+    "baseline": {
+      "/": {
+        "samples": [
+          {
+            "lcp": 3972,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 59,
+            "loadMs": 9063
+          },
+          {
+            "lcp": 3880,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 58,
+            "loadMs": 8998
+          },
+          {
+            "lcp": 3924,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 61,
+            "loadMs": 9014
+          }
+        ],
+        "median": {
+          "lcpMs": 3924,
+          "clsBeforeScroll": 0.0105,
+          "clsAfterScroll": 0.0105,
+          "longTaskMs": 59,
+          "loadMs": 9014,
+          "lcpEl": "IMG.knot__layer knot__left"
+        }
+      },
+      "/hizmetler/strateji-ve-marka-konumlandirma": {
+        "samples": [
+          {
+            "lcp": 3060,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 59,
+            "loadMs": 7883
+          },
+          {
+            "lcp": 3140,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 58,
+            "loadMs": 7854
+          },
+          {
+            "lcp": 3072,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 57,
+            "loadMs": 7857
+          }
+        ],
+        "median": {
+          "lcpMs": 3072,
+          "clsBeforeScroll": 0,
+          "clsAfterScroll": 0,
+          "longTaskMs": 58,
+          "loadMs": 7857,
+          "lcpEl": "P"
+        }
+      },
+      "/hizmetler/kreatif-konsept-ve-reklam-tasarimi": {
+        "samples": [
+          {
+            "lcp": 2876,
+            "lcpEl": "IMG.h-auto w-full",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 66,
+            "loadMs": 7895
+          },
+          {
+            "lcp": 2868,
+            "lcpEl": "IMG.h-auto w-full",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 60,
+            "loadMs": 7891
+          },
+          {
+            "lcp": 2880,
+            "lcpEl": "IMG.h-auto w-full",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 59,
+            "loadMs": 7895
+          }
+        ],
+        "median": {
+          "lcpMs": 2876,
+          "clsBeforeScroll": 0,
+          "clsAfterScroll": 0,
+          "longTaskMs": 60,
+          "loadMs": 7895,
+          "lcpEl": "IMG.h-auto w-full"
+        }
+      }
+    },
+    "branch": {
+      "/": {
+        "samples": [
+          {
+            "lcp": 4264,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 66,
+            "loadMs": 9660
+          },
+          {
+            "lcp": 4220,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 63,
+            "loadMs": 9658
+          },
+          {
+            "lcp": 4268,
+            "lcpEl": "IMG.knot__layer knot__left",
+            "clsBeforeScroll": 0.0105,
+            "clsAfterScroll": 0.0105,
+            "longTaskMs": 54,
+            "loadMs": 9641
+          }
+        ],
+        "median": {
+          "lcpMs": 4264,
+          "clsBeforeScroll": 0.0105,
+          "clsAfterScroll": 0.0105,
+          "longTaskMs": 63,
+          "loadMs": 9658,
+          "lcpEl": "IMG.knot__layer knot__left"
+        }
+      },
+      "/hizmetler/strateji-ve-marka-konumlandirma": {
+        "samples": [
+          {
+            "lcp": 3024,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 67,
+            "loadMs": 8365
+          },
+          {
+            "lcp": 2992,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 61,
+            "loadMs": 8386
+          },
+          {
+            "lcp": 2980,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 61,
+            "loadMs": 8395
+          }
+        ],
+        "median": {
+          "lcpMs": 2992,
+          "clsBeforeScroll": 0,
+          "clsAfterScroll": 0,
+          "longTaskMs": 61,
+          "loadMs": 8386,
+          "lcpEl": "P"
+        }
+      },
+      "/hizmetler/kreatif-konsept-ve-reklam-tasarimi": {
+        "samples": [
+          {
+            "lcp": 3012,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 56,
+            "loadMs": 8245
+          },
+          {
+            "lcp": 3064,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 55,
+            "loadMs": 8245
+          },
+          {
+            "lcp": 3092,
+            "lcpEl": "P",
+            "clsBeforeScroll": 0,
+            "clsAfterScroll": 0,
+            "longTaskMs": 65,
+            "loadMs": 8271
+          }
+        ],
+        "median": {
+          "lcpMs": 3064,
+          "clsBeforeScroll": 0,
+          "clsAfterScroll": 0,
+          "longTaskMs": 56,
+          "loadMs": 8245,
+          "lcpEl": "P"
+        }
+      }
+    }
+  }
+}

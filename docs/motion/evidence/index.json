@@ -1,0 +1,1658 @@
+{
+  "commit": "2102905",
+  "base": "http://localhost:3200",
+  "browser": "chromium 156.0.8078.4",
+  "generatedAt": "2026-10-15T03:49:17.913Z",
+  "files": [
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1440x900-p0.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1440x900-p25.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1440x900-p5.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1440x900-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1440x900-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1440x900-p0.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1440x900-p25.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1440x900-p5.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1440x900-p75.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1440x900-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\desktop-1440x900-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1440x900",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1440x900-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1440x900",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1440x900-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1440x900",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1440x900-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1440x900",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1440x900-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1440x900",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1440x900-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1440x900",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1440x900-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1440x900",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1440x900-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1440x900",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1440x900-p5.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1440x900",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1440x900-p75.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1440x900",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1440x900-p1.webp"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "file": "docs\\motion\\evidence\\typography\\desktop-1440x900-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "file": "docs\\motion\\evidence\\pages\\desktop-1440x900-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1920x1080-p0.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1920x1080-p25.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1920x1080-p5.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1920x1080-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\desktop-1920x1080-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1920x1080-p0.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1920x1080-p25.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1920x1080-p5.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1920x1080-p75.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\desktop-1920x1080-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\desktop-1920x1080-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1920x1080",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1920x1080-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1920x1080-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1920x1080-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1920x1080-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1920x1080",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\desktop-1920x1080-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1920x1080",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1920x1080-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1920x1080-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1920x1080-p5.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1920x1080",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1920x1080-p75.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1920x1080",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\desktop-1920x1080-p1.webp"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "file": "docs\\motion\\evidence\\typography\\desktop-1920x1080-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "desktop-1920x1080",
+      "file": "docs\\motion\\evidence\\pages\\desktop-1920x1080-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\short-1280x720-p0.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\short-1280x720-p25.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\short-1280x720-p5.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\short-1280x720-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\short-1280x720-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\short-1280x720-p0.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\short-1280x720-p25.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\short-1280x720-p5.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\short-1280x720-p75.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\short-1280x720-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\short-1280x720-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "short-1280x720",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\short-1280x720-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "short-1280x720",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\short-1280x720-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "short-1280x720",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\short-1280x720-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "short-1280x720",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\short-1280x720-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "short-1280x720",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\short-1280x720-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "short-1280x720",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\short-1280x720-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "short-1280x720",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\short-1280x720-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "short-1280x720",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\short-1280x720-p5.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "short-1280x720",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\short-1280x720-p75.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "short-1280x720",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\short-1280x720-p1.webp"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "file": "docs\\motion\\evidence\\typography\\short-1280x720-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "short-1280x720",
+      "file": "docs\\motion\\evidence\\pages\\short-1280x720-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\tablet-768x1024-p0.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\tablet-768x1024-p25.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\tablet-768x1024-p5.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\tablet-768x1024-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\tablet-768x1024-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\tablet-768x1024-p0.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\tablet-768x1024-p25.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\tablet-768x1024-p5.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\tablet-768x1024-p75.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\tablet-768x1024-p1.png"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\tablet-768x1024-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "tablet-768x1024",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\tablet-768x1024-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "tablet-768x1024",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\tablet-768x1024-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "tablet-768x1024",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\tablet-768x1024-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "tablet-768x1024",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\tablet-768x1024-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "tablet-768x1024",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\tablet-768x1024-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "tablet-768x1024",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\tablet-768x1024-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "tablet-768x1024",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\tablet-768x1024-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "tablet-768x1024",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\tablet-768x1024-p5.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "tablet-768x1024",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\tablet-768x1024-p75.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "tablet-768x1024",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\tablet-768x1024-p1.png"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "file": "docs\\motion\\evidence\\typography\\tablet-768x1024-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "tablet-768x1024",
+      "file": "docs\\motion\\evidence\\pages\\tablet-768x1024-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-390x844-p0.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-390x844-p25.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-390x844-p5.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-390x844-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-390x844-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\mobile-390x844-p0.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\mobile-390x844-p25.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\mobile-390x844-p5.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\mobile-390x844-p75.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\mobile-390x844-p1.png"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\mobile-390x844-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-390x844",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-390x844-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-390x844",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-390x844-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-390x844",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-390x844-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-390x844",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-390x844-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-390x844",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-390x844-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-390x844",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-390x844-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-390x844",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-390x844-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-390x844",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-390x844-p5.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-390x844",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-390x844-p75.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-390x844",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-390x844-p1.png"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "file": "docs\\motion\\evidence\\typography\\mobile-390x844-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "file": "docs\\motion\\evidence\\pages\\mobile-390x844-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-320x568-p0.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-320x568-p25.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-320x568-p5.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-320x568-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-320x568-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\mobile-320x568-p0.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\mobile-320x568-p25.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\mobile-320x568-p5.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\mobile-320x568-p75.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\mobile-320x568-p1.png"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\mobile-320x568-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-320x568",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-320x568-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-320x568",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-320x568-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-320x568",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-320x568-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-320x568",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-320x568-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-320x568",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-320x568-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-320x568",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-320x568-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-320x568",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-320x568-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-320x568",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-320x568-p5.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-320x568",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-320x568-p75.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-320x568",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-320x568-p1.png"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "file": "docs\\motion\\evidence\\typography\\mobile-320x568-diagnosis-headline.png"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "mobile-320x568",
+      "file": "docs\\motion\\evidence\\pages\\mobile-320x568-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-430x932-p0.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-430x932-p25.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-430x932-p5.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-430x932-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\mobile-430x932-p1.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\mobile-430x932-p0.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\mobile-430x932-p25.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\mobile-430x932-p5.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\mobile-430x932-p75.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\mobile-430x932-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\mobile-430x932-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-430x932",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-430x932-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-430x932",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-430x932-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-430x932",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-430x932-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-430x932",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-430x932-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-430x932",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\mobile-430x932-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-430x932",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-430x932-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-430x932",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-430x932-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-430x932",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-430x932-p5.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-430x932",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-430x932-p75.webp"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-430x932",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\mobile-430x932-p1.webp"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "file": "docs\\motion\\evidence\\typography\\mobile-430x932-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "mobile-430x932",
+      "file": "docs\\motion\\evidence\\pages\\mobile-430x932-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\heart-box\\landscape-844x390-p0.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\heart-box\\landscape-844x390-p25.png"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\heart-box\\landscape-844x390-p5.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\heart-box\\landscape-844x390-p75.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\heart-box\\landscape-844x390-p1.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards\\landscape-844x390-p0.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards\\landscape-844x390-p25.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards\\landscape-844x390-p5.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards\\landscape-844x390-p75.png"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards\\landscape-844x390-p1.png"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-p0.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-p25.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-p5.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-p75.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-p1.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "state": "viewer-right-closed",
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-viewer-right-closed.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "state": "viewer-left-closed",
+      "file": "docs\\motion\\evidence\\owl\\landscape-844x390-viewer-left-closed.webp"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "landscape-844x390",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\pawns\\landscape-844x390-p0.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "landscape-844x390",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\pawns\\landscape-844x390-p25.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "landscape-844x390",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\pawns\\landscape-844x390-p5.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "landscape-844x390",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\pawns\\landscape-844x390-p75.png"
+    },
+    {
+      "scene": "pawns",
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "landscape-844x390",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\pawns\\landscape-844x390-p1.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "landscape-844x390",
+      "progress": 0,
+      "file": "docs\\motion\\evidence\\cards-service\\landscape-844x390-p0.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "landscape-844x390",
+      "progress": 0.25,
+      "file": "docs\\motion\\evidence\\cards-service\\landscape-844x390-p25.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "landscape-844x390",
+      "progress": 0.5,
+      "file": "docs\\motion\\evidence\\cards-service\\landscape-844x390-p5.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "landscape-844x390",
+      "progress": 0.75,
+      "file": "docs\\motion\\evidence\\cards-service\\landscape-844x390-p75.png"
+    },
+    {
+      "scene": "cards-service",
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "landscape-844x390",
+      "progress": 1,
+      "file": "docs\\motion\\evidence\\cards-service\\landscape-844x390-p1.png"
+    },
+    {
+      "scene": "typography",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "file": "docs\\motion\\evidence\\typography\\landscape-844x390-diagnosis-headline.webp"
+    },
+    {
+      "scene": "page",
+      "route": "/",
+      "viewport": "landscape-844x390",
+      "file": "docs\\motion\\evidence\\pages\\landscape-844x390-home.jpg"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "state": "reduced-motion",
+      "file": "docs\\motion\\evidence\\reduced-motion\\desktop-1440x900-heart-box.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "state": "reduced-motion",
+      "file": "docs\\motion\\evidence\\reduced-motion\\desktop-1440x900-cards.webp"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "state": "reduced-motion",
+      "file": "docs\\motion\\evidence\\reduced-motion\\desktop-1440x900-owl.webp"
+    },
+    {
+      "scene": "heart-box",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "state": "reduced-motion",
+      "file": "docs\\motion\\evidence\\reduced-motion\\mobile-390x844-heart-box.webp"
+    },
+    {
+      "scene": "cards",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "state": "reduced-motion",
+      "file": "docs\\motion\\evidence\\reduced-motion\\mobile-390x844-cards.png"
+    },
+    {
+      "scene": "owl",
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "state": "reduced-motion",
+      "file": "docs\\motion\\evidence\\reduced-motion\\mobile-390x844-owl.webp"
+    }
+  ]
+}

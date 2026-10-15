@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "heart-box",
+      "source": "public/images/objects/kalp-ve-kutu.jpg (crop of the poster PNG; original not in repo)",
+      "artboard": {
+        "width": 640,
+        "height": 660
+      },
+      "layers": [
+        {
+          "name": "box-rear",
+          "file": "/images/motion/heart-box/box-rear.png",
+          "x": 0,
+          "y": 0,
+          "width": 617,
+          "height": 454,
+          "z": 1,
+          "role": "static",
+          "bytes": 122886,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "balloon",
+          "file": "/images/motion/heart-box/balloon.png",
+          "x": 213,
+          "y": 22,
+          "width": 266,
+          "height": 443,
+          "z": 2,
+          "role": "scroll",
+          "bytes": 103487,
+          "pivot": [
+            0.3985,
+            0.98194
+          ],
+          "note": ""
+        },
+        {
+          "name": "box-front",
+          "file": "/images/motion/heart-box/box-front.png",
+          "x": 0,
+          "y": 297,
+          "width": 616,
+          "height": 353,
+          "z": 3,
+          "role": "static",
+          "bytes": 117447,
+          "pivot": null,
+          "note": ""
+        }
+      ],
+      "anchors": {
+        "stringBottom": [
+          319.0,
+          457.0
+        ],
+        "rim": {
+          "L": [
+            75,
+            330
+          ],
+          "F": [
+            320,
+            455
+          ],
+          "R": [
+            505,
+            325
+          ]
+        },
+        "balloonKnot": [
+          320,
+          268
+        ]
+      },
+      "notes": [
+        "Scene mask: rembg isnet-general-use; balloon separated by red hue with filled specular holes; string keyed in a narrow column.",
+        "Rear layer: back flaps + interior reconstructed under the balloon/string with cv2.inpaint (Telea, r=7) inside authored flap polygons; standing-flap top edge redrawn.",
+        "Front layer: box pixels on/below the near rim polyline (lifted 3px so the rim highlight occludes the balloon)."
+      ]
+    },
+    {
+      "id": "cards",
+      "source": "public/images/objects/kartlar.jpg (crop of the poster PNG; original not in repo)",
+      "artboard": {
+        "width": 860,
+        "height": 572
+      },
+      "layers": [
+        {
+          "name": "stack-body",
+          "file": "/images/motion/cards/stack-body.png",
+          "x": 310,
+          "y": 0,
+          "width": 531,
+          "height": 397,
+          "z": 1,
+          "role": "static",
+          "bytes": 178157,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "top-card",
+          "file": "/images/motion/cards/top-card.png",
+          "x": 313,
+          "y": 0,
+          "width": 523,
+          "height": 239,
+          "z": 2,
+          "role": "scroll",
+          "bytes": 49980,
+          "pivot": [
+            0.00382,
+            0.61925
+          ],
+          "note": ""
+        },
+        {
+          "name": "red-card",
+          "file": "/images/motion/cards/red-card.png",
+          "x": 22,
+          "y": 206,
+          "width": 538,
+          "height": 341,
+          "z": 3,
+          "role": "scroll",
+          "bytes": 120039,
+          "pivot": [
+            0.01115,
+            0.58358
+          ],
+          "note": ""
+        }
+      ],
+      "anchors": {
+        "redCard": {
+          "corners": [
+            [
+              178,
+              212
+            ],
+            [
+              555,
+              340
+            ],
+            [
+              455,
+              548
+            ],
+            [
+              28,
+              405
+            ]
+          ],
+          "pivot": [
+            28.0,
+            405.0
+          ],
+          "axis": [
+            0.947,
+            0.321
+          ]
+        },
+        "topCard": {
+          "corners": [
+            [
+              443,
+              -4
+            ],
+            [
+              838,
+              100
+            ],
+            [
+              712,
+              232
+            ],
+            [
+              315,
+              148
+            ]
+          ],
+          "pivot": [
+            315.0,
+            148.0
+          ]
+        },
+        "circle": {
+          "center": [
+            570,
+            120
+          ],
+          "axes": [
+            80,
+            52
+          ],
+          "angle": 4.0
+        }
+      },
+      "notes": [
+        "Scene mask: rembg birefnet-general-lite (isnet left the top face semi-transparent).",
+        "Red card keyed by hue inside its authored quad; the cream circles are filled in as part of the card.",
+        "Stack body: strip hidden behind the red card's corner reconstructed from the side face (inpaint + grain copy); a circle-free 'second card' fills the top face under the top card.",
+        "Top card: top face polygon plus ~3px of paper edge from the original pixels."
+      ]
+    },
+    {
+      "id": "owl",
+      "source": "public/images/posters/algoritmayi-suclamadan-once.jpg crop x330-1122 y440-1305 (poster PNG original not in repo)",
+      "artboard": {
+        "width": 792,
+        "height": 865
+      },
+      "layers": [
+        {
+          "name": "owl",
+          "file": "/images/motion/owl/owl.png",
+          "x": 57,
+          "y": 0,
+          "width": 735,
+          "height": 865,
+          "z": 1,
+          "role": "scroll",
+          "bytes": 1148910,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "lid-viewer-left",
+          "file": "/images/motion/owl/lid-viewer-left.png",
+          "x": 307,
+          "y": 293,
+          "width": 183,
+          "height": 131,
+          "z": 2,
+          "role": "wink",
+          "bytes": 46933,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "lid-viewer-right",
+          "file": "/images/motion/owl/lid-viewer-right.png",
+          "x": 620,
+          "y": 215,
+          "width": 172,
+          "height": 133,
+          "z": 3,
+          "role": "wink",
+          "bytes": 43811,
+          "pivot": null,
+          "note": ""
+        }
+      ],
+      "anchors": {
+        "crop": {
+          "x": 330,
+          "y": 440
+        },
+        "eyes": {
+          "viewer-left": {
+            "center": [
+              398.0,
+              358.0
+            ],
+            "axes": [
+              74,
+              46
+            ],
+            "angle": -9.0
+          },
+          "viewer-right": {
+            "center": [
+              711.0,
+              281.0
+            ],
+            "axes": [
+              74,
+              46
+            ],
+            "angle": -13.0
+          }
+        },
+        "bleedEdges": [
+          "top-right",
+          "right",
+          "bottom"
+        ]
+      },
+      "notes": [
+        "Portrait keyed from the saturated red backdrop (redness smoothstep 40..120), red spill removed on edge pixels, residual tint greyed.",
+        "Poster type overlapping the crop is knocked out by connected-component rules (touching the top edge, the left margin, the 'akalım.' zone).",
+        "Eyelids: cheek feather texture (below the viewer-left eye) mapped over each eye, soft ellipse mask (+8px), brow shade at the top, dark crease along the lower lid.",
+        "The right tuft, right side and body bleed off the artboard; the page keeps a red field on that side so the cut edge reads as the poster's frame."
+      ]
+    },
+    {
+      "id": "pawns",
+      "source": "public/images/objects/piyonlar.jpg (crop of the poster PNG; original not in repo)",
+      "artboard": {
+        "width": 1042,
+        "height": 270
+      },
+      "layers": [
+        {
+          "name": "pawn-1",
+          "file": "/images/motion/pawns/pawn-1.png",
+          "x": 33,
+          "y": 16,
+          "width": 154,
+          "height": 245,
+          "z": 1,
+          "role": "scroll",
+          "bytes": 29428,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "pawn-2",
+          "file": "/images/motion/pawns/pawn-2.png",
+          "x": 183,
+          "y": 16,
+          "width": 171,
+          "height": 249,
+          "z": 2,
+          "role": "scroll",
+          "bytes": 30072,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "pawn-3",
+          "file": "/images/motion/pawns/pawn-3.png",
+          "x": 350,
+          "y": 16,
+          "width": 172,
+          "height": 249,
+          "z": 3,
+          "role": "scroll",
+          "bytes": 30008,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "pawn-4",
+          "file": "/images/motion/pawns/pawn-4.png",
+          "x": 518,
+          "y": 16,
+          "width": 170,
+          "height": 250,
+          "z": 4,
+          "role": "scroll",
+          "bytes": 30197,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "pawn-5",
+          "file": "/images/motion/pawns/pawn-5.png",
+          "x": 684,
+          "y": 16,
+          "width": 170,
+          "height": 253,
+          "z": 5,
+          "role": "scroll",
+          "bytes": 31069,
+          "pivot": null,
+          "note": ""
+        },
+        {
+          "name": "pawn-red",
+          "file": "/images/motion/pawns/pawn-red.png",
+          "x": 850,
+          "y": 16,
+          "width": 192,
+          "height": 250,
+          "z": 6,
+          "role": "scroll",
+          "bytes": 40633,
+          "pivot": [
+            0.49479,
+            0.984
+          ],
+          "note": ""
+        }
+      ],
+      "anchors": {
+        "bands": [
+          [
+            20,
+            185
+          ],
+          [
+            185,
+            352
+          ],
+          [
+            352,
+            520
+          ],
+          [
+            520,
+            686
+          ],
+          [
+            686,
+            852
+          ],
+          [
+            852,
+            1042
+          ]
+        ],
+        "baseline": 246
+      },
+      "notes": [
+        "Cutouts: rembg birefnet-general-lite; pixels split into six layers by x band (true pawn outlines, not rectangles).",
+        "Each layer carries its own grounding shadow (black, alpha from darkness vs. an inpainted backdrop estimate) so the shadow moves with the piece."
+      ]
+    }
+  ]
+}

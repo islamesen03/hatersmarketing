@@ -40,3 +40,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright (browser suite) and motion-layer review sheets
+/test-results/
+/playwright-report/
+/.motion-review/
+/.venv-motion/
+
+# python (offline motion-layer pipeline)
+__pycache__/

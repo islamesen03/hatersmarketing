@@ -12,8 +12,9 @@ export function ServicesList({ headingLevel = "h3" }: Props) {
   const Heading = headingLevel;
   return (
     <ul className="border-t border-ink">
-      {services.map((service) => (
-        <li key={service.slug} className="border-b border-ink">
+      {services.map((service, index) => (
+        // Rows fade up in sequence as the list enters; links are usable throughout.
+        <li key={service.slug} className="border-b border-ink" data-reveal style={{ ["--i" as string]: index }}>
           <Link
             href={`/hizmetler/${service.slug}`}
             prefetch={true}
