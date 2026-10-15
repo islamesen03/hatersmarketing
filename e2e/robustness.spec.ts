@@ -224,13 +224,19 @@ test.describe("routes, SEO and 404", () => {
     expect(notFoundRoot.status()).toBe(404);
   });
 
-  test("the gallery keeps its ten posters, counter and arrow keys", async ({ page }) => {
+  test("the concept posters stay on the work page with their disclosure", async ({ page }) => {
+    // the homepage gallery was removed on the client's request: no carousel, section order intact
     await gotoAndSettle(page, "/");
-    const track = page.getByRole("list", { name: /Kampanya afişleri/ });
-    await expect(track.locator("li")).toHaveCount(10);
-    await track.scrollIntoViewIfNeeded();
-    await track.focus();
-    await page.keyboard.press("ArrowRight");
-    await expect(page.locator('[aria-live="polite"]')).toContainText("02");
+    expect(await page.getByRole("list", { name: /Kampanya afişleri/ }).count()).toBe(0);
+    const order = await page.evaluate(() =>
+      Array.from(document.querySelectorAll("main [data-motion-root] > section"))
+        .filter((s) => s.getClientRects().length > 0)
+        .map((s) => s.getAttribute("aria-labelledby")),
+    );
+    expect(order).toEqual(["hero-title", "manifesto-title", "diagnoses-title", "services-title", "method-title", "demo-title", "faq-title", "closer-title"]);
+    await page.goto("/islerimiz");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText("Gösterişe değil. Etkiye bak.");
+    expect(await page.locator("#concepts ~ ul li figure img, section:has(#concepts) figure img").count()).toBe(10);
+    await expect(page.getByText("Konsept çalışması — müşteri projesi değildir").first()).toBeVisible();
   });
 });
