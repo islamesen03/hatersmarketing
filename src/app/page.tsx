@@ -3,7 +3,6 @@ import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import { EditorialHero } from "@/components/home/EditorialHero";
 import { Manifesto } from "@/components/home/Manifesto";
 import { Diagnoses } from "@/components/home/Diagnoses";
-import { GallerySection } from "@/components/home/GallerySection";
 import { ProcessDemo } from "@/components/home/ProcessDemo";
 import { ServicesList } from "@/components/ServicesList";
 import { ProcessSteps } from "@/components/ProcessSteps";
@@ -57,8 +56,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <GallerySection />
 
       <section aria-labelledby="method-title" className="section-y bg-cream text-ink">
         <div className="shell">
