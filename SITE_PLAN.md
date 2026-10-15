@@ -23,7 +23,7 @@
 1. **Hero** → net konum + "Projeni konuşalım" (birincil) / "Nasıl çalıştığımızı gör" (ikincil).
 2. **Manifesto → Teşhis**: tanıdık sorunları adlandırır, her birine ölçülebilir "sonraki adım" verir.
 3. **Hizmetler** → hizmet sayfası → hizmete özel CTA (ör. "Reklam planını konuşalım").
-4. **Galeri / Yöntem / Örnek şablonlar** → güven: uydurma kanıt yerine somut süreç.
+4. **Yöntem / Örnek şablonlar** → güven: uydurma kanıt yerine somut süreç. (Kampanya afişleri yalnızca `/islerimiz` sayfasında; ana sayfadaki galeri bölümü 15 Ekim 2026'da kaldırıldı.)
 5. **SSS** → ön satış itirazları (bütçe, garanti, süre, kanal).
 6. **Kırmızı kapanış** → "Markanı anlat" → `/iletisim#brif`.
 7. **Form** → yalnızca sunucu teslimatı onaylarsa başarı ekranı.
@@ -32,11 +32,11 @@ Sabit dönüşüm noktası: header'daki kırmızı "Projeni konuşalım" (mobild
 
 ## Ana sayfa ritmi (zemin sırası)
 
-Siyah hero → krem manifesto → siyah teşhis → krem hizmetler → siyah galeri → krem yöntem → siyah örnek şablonlar → krem SSS → **kırmızı kapanış** → siyah footer.
+Siyah hero → krem manifesto → siyah teşhis → krem hizmetler → krem yöntem → siyah örnek şablonlar → krem SSS → **kırmızı kapanış** → siyah footer.
 
 ## Bileşenler
 
-`SiteHeader` + `HeaderNav` (mobil menü), `EditorialHero`, `Manifesto`, `Diagnoses` (ProblemPanel), `ServicesList`, `GallerySection` + `PosterGallery` (ImageEditorial), `ProcessSteps`, `ProcessDemo` (CaseStudyPreview yerine dürüst örnek teslimatlar), `FAQAccordion`, `CTASection`, `LeadForm`, `SiteFooter`, `CookieConsent` + `Analytics`, `PageHero`, `LegalDocument`, `InvertedLabelAccent` (logo değil), `Logo`, `Headline`, `JsonLd`.
+`SiteHeader` + `HeaderNav` (mobil menü), `EditorialHero`, `Manifesto`, `Diagnoses` (ProblemPanel), `ServicesList`, `ProcessSteps`, `ProcessDemo` (CaseStudyPreview yerine dürüst örnek teslimatlar), `FAQAccordion`, `CTASection`, `LeadForm`, `SiteFooter`, `CookieConsent` + `Analytics`, `PageHero`, `LegalDocument`, `InvertedLabelAccent` (logo değil), `Logo`, `Headline`, `JsonLd`.
 
 ## Analitik olayları (yalnızca onaydan sonra)
 
