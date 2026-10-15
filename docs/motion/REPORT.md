@@ -60,11 +60,22 @@ Commands and status (15 Oct 2026, Windows 11, Node 24.18, npm 12.1):
 | `npm run typecheck` | pass (after a build; before any build it fails on the generated `next-env.d.ts` exactly as on `main`) |
 | `npm test` | 16 / 16 pass (7 existing lead-validation tests + 9 motion unit tests) |
 | `npm run build` | pass, same route table as `main` |
-| `npm run test:e2e` | 136 / 136 pass (4 Chromium projects × 34 tests), see §4.1 |
+| `npm run test:e2e` | 204 / 204 pass (4 Chromium + 2 WebKit projects × 34 tests), see §4.1 |
 
 ### 4.1 Browser suite
 
-`npm run build && npm run test:e2e` — Playwright 1.64.1, Chromium 1248, four projects: desktop 1440×900, short desktop 1280×720, mobile 390×844 (Pixel 7 emulation, touch), small mobile 320×568. 34 tests per project, 136 in total.
+`npm run build && npm run test:e2e` — Playwright 1.64.1, six projects, 34 tests each (204 in total): Chromium 1248 at desktop 1440×900, short desktop 1280×720, mobile 390×844 (Pixel 7 emulation, touch) and small mobile 320×568; WebKit 2370 (Safari 27-class) at desktop 1440×900 and as iPhone 14 (390×664, touch, 3×). A Firefox project exists behind `E2E_FIREFOX=1` (see the engine table and §7).
+
+Engine coverage and the driver each engine takes (`html[data-motion]`, `data-scene-driver`):
+
+| Engine (Playwright build) | `ViewTimeline` | `animation-timeline: view()` | Driver used by the scenes | Result |
+| --- | --- | --- | --- | --- |
+| Chromium 1248 | yes | yes | native ViewTimeline (timeline `currentTime` matches `p` to 0.1 %) | 136 / 136 |
+| WebKit 2370 (desktop + iPhone 14) | yes | yes | native ViewTimeline (verified: `ViewTimeline:running:56.7 %` at `p = 0.568`) | 68 / 68 |
+| Chromium with `ViewTimeline` deleted (fallback test) | no | yes | shared scroll driver, paused DocumentTimeline animations scrubbed by `p` | pass |
+| Firefox 1555 | — | — | — | not runnable here: the Playwright build fails to start on this Windows 11 machine with a side-by-side error ("dependent assembly mozglue 1.0.0.0 not found", Application log event 33), reproduced after `playwright install --force firefox`; the project is opt-in via `E2E_FIREFOX=1` for a machine or CI runner where the build starts |
+
+Engine differences surfaced by the WebKit run were all in the tests, not in the motion code: WebKit only moves keyboard focus to links when Safari's "Press Tab to highlight each item" preference is on (the keyboard test now checks DOM order + `focus()` there), mobile WebKit has no mouse wheel (`scrollBy` instead), the opacity transition (420 ms) finishes before the transform one (760 ms) so the entrance test polls both, and the pixel sampler now reads the channel count and scale factor of whatever screenshot the engine returns.
 
 | Spec | What it proves |
 | --- | --- |
@@ -73,7 +84,7 @@ Commands and status (15 Oct 2026, Windows 11, Node 24.18, npm 12.1):
 | `robustness.spec.ts` | Text entrances: armed below the fold, released on intersection from both directions, final opacity 1 and no transform, accessible text "Beğeni geldi. Sipariş?" intact, no re-hide on reversal; block titles once from the left. Reduced motion at load: `data-motion="reduced"`, no animation objects, no transforms, lids hidden, `scroll-behavior: auto`. Runtime preference change both ways. Fallback driver with `ViewTimeline` deleted: `data-motion="fallback"`, one paused DocumentTimeline animation per layer scrubbed by progress (exactly one driver). No JavaScript: H1, three scenes with their layers, FAQ `<details>`, visible headline, `role="img"` + Turkish description. No page-level horizontal overflow at 320/390/430/768/1024/1440/1920 on three routes at four scroll positions. No layout shift from the figures. Client navigation and back: no scene animation survives the hidden previous page; re-initialisation creates exactly one animation per scrolled layer. Routes render one visible H1 with canonical, OG image and JSON-LD; the 404 page renders with `noindex` for an unknown slug; the gallery keeps ten posters, its counter and arrow keys. |
 | `a11y.spec.ts` | axe-core 4.13 (WCAG 2.0/2.1 A+AA + best practice) on `/`, both scene service pages and `/yaklasimimiz`, twice each: with reduced motion (every element at its final pose) and with motion on at the top of the page after the load reveals; zero serious/critical findings. Keyboard: skip link first, nothing focusable inside a scene, every layer `pointer-events: none`. |
 
-Final run (15 Oct 2026, after the last code change): **136 passed, 0 failed, 0 flaky (3.2 min)**. One baseline finding is excluded from the enhanced-state scan and reported in §6: the manifesto's inverted first line (`[data-upright]`, unchanged from `main`) rests at opacity 0.35 while still below the fold, which axe reads as a contrast failure of an offscreen pose.
+Final run (15 Oct 2026, after the last code change): **204 passed, 0 failed, 0 flaky (5.8 min)**. One baseline finding is excluded from the enhanced-state scan and reported in §6: the manifesto's inverted first line (`[data-upright]`, unchanged from `main`) rests at opacity 0.35 while still below the fold, which axe reads as a contrast failure of an offscreen pose.
 
 ### 4.2 Manual checks
 
@@ -87,7 +98,7 @@ Reviewed on the captured evidence (`docs/motion/evidence/`, Chromium 1248 via Pl
 - Reduced motion (`reduced-motion/*`): the still image, lids hidden, no armed text.
 - Resting layouts compared with the baseline captures (`baseline/*`, live site 15 Oct 2026): section order, type, copy, grid and colours are unchanged; the only differences are the three diagnosis figures (cut-outs instead of cream/red photo fields) and the owl's inset red field.
 - Keyboard: skip link → header CTA → nav; nothing inside a scene is focusable; layers are `pointer-events: none` (automated in `a11y.spec.ts`). Screen-reader spot check (NVDA was not available in this environment): the accessibility tree exposes one image per scene with the Turkish alt text and plain headings with full text — verified with Playwright's `getByRole` queries; a real screen-reader pass is still recommended before launch.
-- Real iOS Safari / Android Chrome were not available: everything above is Chromium (headless and the Playwright mobile emulation). Firefox and WebKit runs are a listed next action.
+- Real iOS Safari / Android Chrome were not available: everything above is Chromium and WebKit (headless, with Playwright's mobile emulation). Firefox is a listed next action (see §4.1 and §7).
 
 ## 5. Performance
 
@@ -162,7 +173,7 @@ The home-page regression under profile B exceeds the 200 ms investigation thresh
 | The box interior behind the low heart is reconstructed (inpainted cardboard with synthetic grain, redrawn flap edge). | Reads correctly at 1×; softer than the photo at 2×. | Optional retouch of `box-rear` by an illustrator, or extraction from the original PNG. |
 | Eyelids are authored patches, not photographs of closed eyes. | Convincing at display size, deliberately brief (315 ms). | If the agency has a closed-eye frame of the same owl, swap the two lid PNGs; the manifest and timings stay. |
 | Unknown service slugs answer 200 + the 404 page under self-hosted `next start` (404 on Vercel). | Pre-existing, identical on `main` (verified with a baseline build); the test accepts both and checks the 404 page content and `noindex`. | Not part of this upgrade; worth a look at `instant = false` behaviour with the Next.js team if self-hosting is ever used. |
-| Only Chromium was run (desktop + mobile emulation). Scroll-driven animations are in current Chromium, Safari 26 and Firefox 144+; older WebKit/Firefox take the fallback driver (tested by deleting `ViewTimeline`). | Fallback and native paths tested in Chromium only. | `npx playwright install webkit firefox` and add the projects to `playwright.config.ts`; test on a real iPhone and Android device. |
+| Chromium and WebKit were run (desktop + mobile emulation); both use the native ViewTimeline driver, and the fallback driver is exercised by deleting `ViewTimeline`. Firefox could not be run: Playwright's Firefox 1555 fails to start on this Windows 11 machine (side-by-side manifest error for its private `mozglue` assembly, reproduced after a forced reinstall). | Firefox project present but opt-in (`E2E_FIREFOX=1`). | Run `E2E_FIREFOX=1 npm run test:e2e` on a Linux/macOS machine or CI runner (where Playwright's Firefox starts) — Firefox 144+ should take the native path, older Firefox the fallback; test on a real iPhone and Android device. |
 | No field data; no real mid-range device trace. | Lab-only numbers in §5. | After deployment, read CrUX / RUM INP and LCP segmented by device; record a Performance panel trace on a mid-range Android while scrolling the home page. |
 | Lighthouse ran against local `next start` (no CDN, no Brotli), so absolute numbers are not production numbers. | Baseline and branch were measured identically (same machine, same preset, three runs, median). | Repeat on the preview deployment once this branch is deployed. |
 | Save-Data is detected but nothing optional depends on it (there is no tilt or idle motion to drop). | By design. | None. |

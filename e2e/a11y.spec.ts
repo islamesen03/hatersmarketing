@@ -62,10 +62,24 @@ test.describe("axe, motion on (top of page after the load reveals)", () => {
   }
 });
 
-test("keyboard: skip link, header CTA, scene stages are not focus traps", async ({ page }) => {
+test("keyboard: skip link, header CTA, scene stages are not focus traps", async ({ page, browserName }) => {
   await gotoAndSettle(page, "/");
-  await page.keyboard.press("Tab");
-  await expect(page.getByRole("link", { name: "İçeriğe geç" })).toBeFocused();
+  const skip = page.getByRole("link", { name: "İçeriğe geç" });
+  if (browserName === "webkit") {
+    // Safari/WebKit only moves keyboard focus to links when the user's "Press Tab to highlight
+    // each item" preference is on, which the automation build does not expose. Check what is
+    // engine-independent instead: the skip link is the first focusable element in the DOM and
+    // accepts focus.
+    const first = await page.evaluate(() => {
+      const el = document.querySelector<HTMLElement>('a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      return el ? `${el.tagName.toLowerCase()} ${el.getAttribute("href") ?? ""}` : "";
+    });
+    expect(first).toBe("a #icerik");
+    await skip.focus();
+  } else {
+    await page.keyboard.press("Tab");
+  }
+  await expect(skip).toBeFocused();
   // Nothing inside a scene stage is focusable and no layer intercepts the pointer.
   const focusableInScenes = await page.evaluate(
     () => document.querySelectorAll('[data-scene] a, [data-scene] button, [data-scene] [tabindex]:not([tabindex="-1"])').length,

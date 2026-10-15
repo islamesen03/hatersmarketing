@@ -70,12 +70,14 @@ test.describe("heart & box", () => {
       const y = Math.round(stage.y + stage.height * fy);
       expect(y, "sample point inside the viewport").toBeLessThan(viewport.height - 3);
       const png = await page.screenshot({ clip: { x: x - 2, y: y - 2, width: 5, height: 5 } });
-      const { data } = await sharp(png).raw().toBuffer({ resolveWithObject: true });
+      // engines differ in channel count and device scale; average whatever came back
+      const { data, info } = await sharp(png).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
       let r = 0;
       let g = 0;
       let b = 0;
-      const n = data.length / 3;
-      for (let i = 0; i < data.length; i += 3) {
+      const n = info.width * info.height;
+      expect(n, "sample has pixels").toBeGreaterThan(0);
+      for (let i = 0; i < data.length; i += info.channels) {
         r += data[i];
         g += data[i + 1];
         b += data[i + 2];

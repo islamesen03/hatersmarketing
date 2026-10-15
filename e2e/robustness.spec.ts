@@ -19,12 +19,12 @@ test.describe("text entrances", () => {
     await headline.scrollIntoViewIfNeeded();
     await expect(headline).toHaveAttribute("data-enter-state", "in");
     await expect.poll(async () => lines.nth(1).locator("span").evaluate((el) => getComputedStyle(el).opacity), { timeout: 4000 }).toBe("1");
-    const finalTransform = await lines.nth(1).locator("span").evaluate((el) => getComputedStyle(el).transform);
-    expect(finalTransform).toBe("none");
+    // the transform transition (760 ms) outlasts the opacity one (420 ms)
+    await expect.poll(async () => lines.nth(1).locator("span").evaluate((el) => getComputedStyle(el).transform), { timeout: 4000 }).toBe("none");
     // accessible text intact, Turkish letters and spacing preserved
     await expect(headline).toHaveText("Beğeni geldi. Sipariş?");
-    // scrolling back a little must not hide it again
-    await page.mouse.wheel(0, -200);
+    // scrolling back a little must not hide it again (scrollBy: mobile WebKit has no mouse wheel)
+    await page.evaluate(() => window.scrollBy({ top: -200, behavior: "instant" }));
     await page.waitForTimeout(200);
     await expect(headline).toHaveAttribute("data-enter-state", "in");
   });

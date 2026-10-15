@@ -36,5 +36,15 @@ export default defineConfig({
     { name: "short-desktop-chromium", use: { ...devices["Desktop Chrome"], viewport: { width: 1280, height: 720 } } },
     { name: "mobile-chromium", use: { ...devices["Pixel 7"], viewport: { width: 390, height: 844 } } },
     { name: "mobile-small-chromium", use: { ...devices["Pixel 7"], viewport: { width: 320, height: 568 } } },
+    // Other engines: native scroll-driven animations where the build has them, otherwise
+    // the shared scroll driver (html[data-motion] records which path ran).
+    { name: "desktop-webkit", use: { ...devices["Desktop Safari"], viewport: { width: 1440, height: 900 } } },
+    { name: "mobile-webkit", use: { ...devices["iPhone 14"] } },
+    // Playwright's Firefox build could not start on the Windows machine this suite was
+    // authored on (side-by-side manifest error for its private "mozglue" assembly), so the
+    // project is opt-in: E2E_FIREFOX=1 npm run test:e2e (after `npx playwright install firefox`).
+    ...(process.env.E2E_FIREFOX
+      ? [{ name: "desktop-firefox", use: { ...devices["Desktop Firefox"], viewport: { width: 1440, height: 900 } } }]
+      : []),
   ],
 });
