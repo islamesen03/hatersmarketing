@@ -10,7 +10,7 @@ export function GallerySection() {
         <div className="grid-12 gap-y-6">
           <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Kendi kampanya serimiz</p>
           <div className="col-span-4 md:col-span-9">
-            <h2 id="gallery-title" className="display t-xl">
+            <h2 id="gallery-title" className="display t-xl" data-enter="left">
               Biz böyle konuşuruz.
             </h2>
             <p className="mt-6 max-w-2xl text-cream/80">

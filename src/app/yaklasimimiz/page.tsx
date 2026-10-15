@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import { PageHero } from "@/components/PageHero";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { CTASection } from "@/components/CTASection";
@@ -17,7 +18,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ApproachPage() {
   return (
-    <>
+    <MotionBoundary>
       <PageHero
         eyebrow="Yaklaşımımız"
         headline={[{ text: "Önce soru." }, { text: "Sonra reklam.", accent: true }]}
@@ -35,7 +36,7 @@ export default function ApproachPage() {
         <div className="shell">
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 md:col-span-3">Başlangıç</p>
-            <h2 id="questions" className="display t-xl col-span-4 md:col-span-9">
+            <h2 id="questions" className="display t-xl col-span-4 md:col-span-9" data-enter="left">
               Üç soru.
             </h2>
           </div>
@@ -58,7 +59,7 @@ export default function ApproachPage() {
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Yöntem</p>
             <div className="col-span-4 md:col-span-9">
-              <h2 id="method" className="display t-xl">
+              <h2 id="method" className="display t-xl" data-enter="left">
                 Beş adım. <span className="text-red">Beş belge.</span>
               </h2>
               <p className="lead mt-6 max-w-2xl text-cream/80">
@@ -77,7 +78,7 @@ export default function ApproachPage() {
         <div className="shell grid-12 gap-y-12">
           <div className="col-span-4 md:col-span-5">
             <p className="eyebrow">Ön inceleme</p>
-            <h2 id="audit" className="display t-lg mt-6">
+            <h2 id="audit" className="display t-lg mt-6" data-enter="left">
               İlk önce neye bakarız?
             </h2>
             <p className="mt-6 max-w-md text-ink/80">
@@ -103,7 +104,7 @@ export default function ApproachPage() {
         <div className="shell">
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Sınırlarımız</p>
-            <h2 id="wont" className="display t-xl col-span-4 md:col-span-9">
+            <h2 id="wont" className="display t-xl col-span-4 md:col-span-9" data-enter="left">
               Yapmadıklarımız.
             </h2>
           </div>
@@ -125,6 +126,6 @@ export default function ApproachPage() {
         track="approach-closer"
       />
       <JsonLd data={breadcrumbJsonLd([{ name: "Yaklaşımımız", path: "/yaklasimimiz" }])} />
-    </>
+    </MotionBoundary>
   );
 }

@@ -316,10 +316,11 @@ img {
  */
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
+    /* `--i` staggers siblings (services rows, method steps) by shifting the range. */
     [data-reveal] {
       animation: fade-up linear both;
       animation-timeline: view();
-      animation-range: entry 0% entry 55%;
+      animation-range: entry calc(var(--i, 0) * 6%) entry calc(55% + var(--i, 0) * 6%);
     }
 
     [data-drift] {
@@ -509,4 +510,172 @@ details[open] .faq-icon {
       interpolate-size: allow-keywords;
     }
   }
+}
+
+/* ---------- Text entrances (once per visit, armed by MotionBoundary) ---------- */
+
+/*
+ * Headlines with `enter="sides"`: plain lines arrive from the left, the accent line from
+ * the right, each out of its own clip. Nothing here hides text on its own: the hidden
+ * state exists only while JavaScript has set data-enter-state="armed" (below the fold,
+ * motion allowed) and is released on intersection.
+ */
+:root {
+  --enter-travel: clamp(12px, 4vw, 72px);
+}
+
+@media (width < 48rem) {
+  :root {
+    --enter-travel: 20px;
+  }
+}
+
+.enter-line {
+  display: block;
+  overflow: clip;
+  /* Room for İ dots and Ş/Ç cedillas, as in .mask-line. */
+  padding-block: 0.1em 0.03em;
+  margin-block: -0.1em -0.03em;
+}
+
+.enter-line > span {
+  display: block;
+}
+
+.enter-line--left {
+  --enter-x: calc(-1 * var(--enter-travel));
+}
+
+.enter-line--right {
+  --enter-x: var(--enter-travel);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-enter-state="armed"] .enter-line > span {
+    opacity: 0;
+    transform: translate3d(var(--enter-x), 0, 0);
+  }
+
+  [data-enter-state="in"] .enter-line > span {
+    opacity: 1;
+    transform: none;
+    transition:
+      transform 760ms var(--ease-editorial),
+      opacity 420ms linear;
+    transition-delay: calc(var(--line, 0) * 90ms);
+  }
+
+  /* Whole-block entrance for section titles that keep inline accents. */
+  [data-enter="left"][data-enter-state="armed"] {
+    opacity: 0;
+    transform: translate3d(calc(-1 * var(--enter-travel)), 0, 0);
+  }
+
+  [data-enter="left"][data-enter-state="in"] {
+    opacity: 1;
+    transform: none;
+    transition:
+      transform 760ms var(--ease-editorial),
+      opacity 420ms linear;
+  }
+}
+
+/* Method steps: the rule above each step draws in as the step enters. */
+.rule-draw {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: 0 50%;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-step] {
+      view-timeline-name: --step;
+    }
+
+    .rule-draw {
+      animation: rule-draw linear both;
+      animation-timeline: --step;
+      animation-range: entry calc(var(--i, 0) * 6%) entry calc(70% + var(--i, 0) * 6%);
+    }
+  }
+}
+
+@keyframes rule-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ---------- Scenes: photographed objects as separable layers ---------- */
+
+/*
+ * Server-rendered stage with a fixed aspect ratio; every layer sits at its photographed
+ * position by default (the still image). MotionBoundary attaches the scroll choreography
+ * (ViewTimeline or scrubbed fallback) to [data-layer] elements; it never changes layout.
+ */
+.scene {
+  position: relative;
+}
+
+.scene__stage {
+  position: relative;
+  width: 100%;
+  /* clip, never hidden: hidden would create a scroll container (see EditorialHero). */
+  overflow: clip;
+}
+
+/* The balloon is allowed to overflow its stage; occlusion is done by the front layer. */
+.scene--heart-box .scene__stage {
+  overflow: visible;
+}
+
+.scene__field {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+/* The owl keeps a red brand field on its bleed side; the portrait leans out of it. */
+.scene--owl .scene__field {
+  display: block;
+  inset: 0 0 0 36%;
+  background: var(--brand-red);
+}
+
+/* The pawns stand on the studio's cream field (black pawns need it). */
+.scene--pawns .scene__field {
+  display: block;
+  background: var(--brand-cream);
+}
+
+.scene__layer {
+  position: absolute;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+/* Eyelids are hidden until a wink animates their clip. */
+.scene__lid {
+  clip-path: inset(0 0 100% 0);
+}
+
+/* Zero-height subject at the stage centre for the native view timeline. */
+.scene__pivot {
+  position: absolute;
+  inset: 50% 0 auto 0;
+  height: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Hint compositing only while a scene is near the viewport. */
+.scene.is-active .scene__layer[data-role="scroll"] {
+  will-change: transform;
 }

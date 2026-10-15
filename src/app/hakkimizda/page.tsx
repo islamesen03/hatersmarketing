@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import { PageHero } from "@/components/PageHero";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
@@ -40,7 +41,7 @@ const dislikes = [
 
 export default function AboutPage() {
   return (
-    <>
+    <MotionBoundary>
       <PageHero
         eyebrow="Hakkımızda"
         headline={[{ text: "Adımız ters." }, { text: "İşimiz net.", accent: true }]}
@@ -57,7 +58,7 @@ export default function AboutPage() {
         <div className="shell grid-12 gap-y-12">
           <div className="col-span-4 md:col-span-5">
             <p className="eyebrow">Fikir</p>
-            <h2 id="logo-idea" className="display t-lg mt-6">
+            <h2 id="logo-idea" className="display t-lg mt-6" data-enter="left">
               Ters dediysek, gerçekten ters.
             </h2>
             <p className="mt-6 max-w-md text-ink/80">
@@ -97,7 +98,7 @@ export default function AboutPage() {
         <div className="shell">
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">İlkeler</p>
-            <h2 id="beliefs" className="display t-xl col-span-4 md:col-span-9">
+            <h2 id="beliefs" className="display t-xl col-span-4 md:col-span-9" data-enter="left">
               Neye inanıyoruz.
             </h2>
           </div>
@@ -117,7 +118,7 @@ export default function AboutPage() {
         <div className="shell grid-12 gap-y-12">
           <div className="col-span-4 md:col-span-5">
             <p className="eyebrow">Peki “haters” kimden nefret ediyor?</p>
-            <h2 id="dislikes" className="display t-lg mt-6">
+            <h2 id="dislikes" className="display t-lg mt-6" data-enter="left">
               Kimseden. Şunlardan hoşlanmıyoruz.
             </h2>
             <p className="mt-6 max-w-md text-ink/80">
@@ -144,6 +145,6 @@ export default function AboutPage() {
         track="about-closer"
       />
       <JsonLd data={breadcrumbJsonLd([{ name: "Hakkımızda", path: "/hakkimizda" }])} />
-    </>
+    </MotionBoundary>
   );
 }

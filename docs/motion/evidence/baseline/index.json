@@ -1,0 +1,71 @@
+{
+  "source": "https://www.hatersmarketing.com",
+  "note": "Live production at capture time; HTML markers matched commit 2102905 (knot cut-out, object images, noindex).",
+  "capturedAt": "2026-10-15T02:46:45.097Z",
+  "files": [
+    {
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "file": "docs/motion/evidence/baseline/desktop-1440x900-home.jpg"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "section": "diagnoses",
+      "file": "docs/motion/evidence/baseline/desktop-1440x900-home-diagnoses.webp"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440x900",
+      "section": "method",
+      "file": "docs/motion/evidence/baseline/desktop-1440x900-home-method.webp"
+    },
+    {
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "desktop-1440x900",
+      "file": "docs/motion/evidence/baseline/desktop-1440x900-service-strategy.jpg"
+    },
+    {
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "desktop-1440x900",
+      "file": "docs/motion/evidence/baseline/desktop-1440x900-service-creative.jpg"
+    },
+    {
+      "route": "/yaklasimimiz",
+      "viewport": "desktop-1440x900",
+      "file": "docs/motion/evidence/baseline/desktop-1440x900-approach.jpg"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "file": "docs/motion/evidence/baseline/mobile-390x844-home.jpg"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "section": "diagnoses",
+      "file": "docs/motion/evidence/baseline/mobile-390x844-home-diagnoses.webp"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390x844",
+      "section": "method",
+      "file": "docs/motion/evidence/baseline/mobile-390x844-home-method.png"
+    },
+    {
+      "route": "/hizmetler/strateji-ve-marka-konumlandirma",
+      "viewport": "mobile-390x844",
+      "file": "docs/motion/evidence/baseline/mobile-390x844-service-strategy.jpg"
+    },
+    {
+      "route": "/hizmetler/kreatif-konsept-ve-reklam-tasarimi",
+      "viewport": "mobile-390x844",
+      "file": "docs/motion/evidence/baseline/mobile-390x844-service-creative.jpg"
+    },
+    {
+      "route": "/yaklasimimiz",
+      "viewport": "mobile-390x844",
+      "file": "docs/motion/evidence/baseline/mobile-390x844-approach.jpg"
+    }
+  ]
+}

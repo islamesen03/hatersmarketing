@@ -14,7 +14,7 @@ export function ProcessDemo() {
         <div className="grid-12 gap-y-6">
           <p className="eyebrow col-span-4 text-cream/70 md:col-span-3">Nasıl çalışırız</p>
           <div className="col-span-4 md:col-span-9">
-            <h2 id="demo-title" className="display t-xl">
+            <h2 id="demo-title" className="display t-xl" data-enter="left">
               Söz değil. <span className="text-red">Süreç.</span>
             </h2>
             <p className="lead mt-6 max-w-2xl text-cream/85">

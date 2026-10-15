@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import { EditorialHero } from "@/components/home/EditorialHero";
 import { Manifesto } from "@/components/home/Manifesto";
 import { Diagnoses } from "@/components/home/Diagnoses";
@@ -33,7 +34,7 @@ const faqJsonLd = {
 
 export default function HomePage() {
   return (
-    <>
+    <MotionBoundary>
       <EditorialHero />
       <Manifesto />
       <Diagnoses />
@@ -43,7 +44,7 @@ export default function HomePage() {
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 md:col-span-3">Hizmetler</p>
             <div className="col-span-4 md:col-span-9">
-              <h2 id="services-title" className="display t-xl">
+              <h2 id="services-title" className="display t-xl" data-enter="left">
                 Beş iş. <span className="text-red">Tek soru.</span>
               </h2>
               <p className="lead mt-6 max-w-2xl text-ink/80">
@@ -64,7 +65,7 @@ export default function HomePage() {
           <div className="grid-12 gap-y-6">
             <p className="eyebrow col-span-4 md:col-span-3">Yöntem</p>
             <div className="col-span-4 md:col-span-9">
-              <h2 id="method-title" className="display t-xl">
+              <h2 id="method-title" className="display t-xl" data-enter="left">
                 Önce soru. <span className="text-red">Sonra reklam.</span>
               </h2>
               <p className="lead mt-6 max-w-2xl text-ink/80">
@@ -89,7 +90,7 @@ export default function HomePage() {
         <div className="shell grid-12 gap-y-12">
           <div className="col-span-4 md:col-span-4">
             <p className="eyebrow">Sık sorulanlar</p>
-            <h2 id="faq-title" className="display t-lg mt-6">
+            <h2 id="faq-title" className="display t-lg mt-6" data-enter="left">
               Sormadan önce.
             </h2>
             <p className="mt-6 max-w-sm text-ink/80">
@@ -104,6 +105,6 @@ export default function HomePage() {
 
       <CTASection />
       <JsonLd data={faqJsonLd} />
-    </>
+    </MotionBoundary>
   );
 }

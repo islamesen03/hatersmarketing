@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-10-15T03:26:00.706Z",
+  "builds": {
+    "baseline": "http://localhost:3300",
+    "branch": "http://localhost:3200"
+  },
+  "js": {
+    "baseline": {
+      "/": {
+        "files": 8,
+        "rawKB": 498.1,
+        "gzipKB": 151.1,
+        "chunks": [
+          "static/chunks/3caktg1edsts6.js 9.4KB",
+          "static/chunks/turbopack-3-ry682tkyiqk.js 3.8KB",
+          "static/chunks/3d1b1cau2l4gm.js 1.3KB",
+          "static/chunks/2ewybrsuvy5ed.js 7.9KB",
+          "static/chunks/10r-_1i1ufyht.js 8.6KB",
+          "static/chunks/0zwkgt6z_hwdh.js 45.4KB",
+          "static/chunks/338jgoa0amufs.js 70.0KB",
+          "static/chunks/2bj-9n2r-9ejv.js 4.6KB"
+        ]
+      },
+      "/hizmetler/strateji-ve-marka-konumlandirma": {
+        "files": 9,
+        "rawKB": 498.4,
+        "gzipKB": 151.3,
+        "chunks": [
+          "static/chunks/3caktg1edsts6.js 9.4KB",
+          "static/chunks/2zr0yz5onwm8w.js 0.2KB",
+          "static/chunks/turbopack-3-ry682tkyiqk.js 3.8KB",
+          "static/chunks/10r-_1i1ufyht.js 8.6KB",
+          "static/chunks/2ewybrsuvy5ed.js 7.9KB",
+          "static/chunks/0zwkgt6z_hwdh.js 45.4KB",
+          "static/chunks/338jgoa0amufs.js 70.0KB",
+          "static/chunks/3d1b1cau2l4gm.js 1.3KB",
+          "static/chunks/2bj-9n2r-9ejv.js 4.6KB"
+        ]
+      },
+      "/hizmetler/kreatif-konsept-ve-reklam-tasarimi": {
+        "files": 9,
+        "rawKB": 498.4,
+        "gzipKB": 151.3,
+        "chunks": [
+          "static/chunks/3caktg1edsts6.js 9.4KB",
+          "static/chunks/turbopack-3-ry682tkyiqk.js 3.8KB",
+          "static/chunks/2zr0yz5onwm8w.js 0.2KB",
+          "static/chunks/2ewybrsuvy5ed.js 7.9KB",
+          "static/chunks/10r-_1i1ufyht.js 8.6KB",
+          "static/chunks/0zwkgt6z_hwdh.js 45.4KB",
+          "static/chunks/338jgoa0amufs.js 70.0KB",
+          "static/chunks/3d1b1cau2l4gm.js 1.3KB",
+          "static/chunks/2bj-9n2r-9ejv.js 4.6KB"
+        ]
+      }
+    },
+    "branch": {
+      "/": {
+        "files": 10,
+        "rawKB": 510.8,
+        "gzipKB": 155.7,
+        "chunks": [
+          "static/chunks/3caktg1edsts6.js 9.4KB",
+          "static/chunks/turbopack-3-ry682tkyiqk.js 3.8KB",
+          "static/chunks/10r-_1i1ufyht.js 8.6KB",
+          "static/chunks/0gent9yiow7nl.js 1.6KB",
+          "static/chunks/0zwkgt6z_hwdh.js 45.4KB",
+          "static/chunks/2ewybrsuvy5ed.js 7.9KB",
+          "static/chunks/338jgoa0amufs.js 70.0KB",
+          "static/chunks/0l20hn6c18j3i.js 3.9KB",
+          "static/chunks/1wetqr2gkv9at.js 0.5KB",
+          "static/chunks/2bj-9n2r-9ejv.js 4.6KB"
+        ]
+      },
+      "/hizmetler/strateji-ve-marka-konumlandirma": {
+        "files": 11,
+        "rawKB": 511.6,
+        "gzipKB": 156.2,
+        "chunks": [
+          "static/chunks/3caktg1edsts6.js 9.4KB",
+          "static/chunks/turbopack-3-ry682tkyiqk.js 3.8KB",
+          "static/chunks/1or_3d_5y73m1.js 0.5KB",
+          "static/chunks/2ewybrsuvy5ed.js 7.9KB",
+          "static/chunks/10r-_1i1ufyht.js 8.6KB",
+          "static/chunks/0zwkgt6z_hwdh.js 45.4KB",
+          "static/chunks/338jgoa0amufs.js 70.0KB",
+          "static/chunks/0l20hn6c18j3i.js 3.9KB",
+          "static/chunks/1wetqr2gkv9at.js 0.5KB",
+          "static/chunks/0gent9yiow7nl.js 1.6KB",
+          "static/chunks/2bj-9n2r-9ejv.js 4.6KB"
+        ]
+      },
+      "/hizmetler/kreatif-konsept-ve-reklam-tasarimi": {
+        "files": 11,
+        "rawKB": 511.6,
+        "gzipKB": 156.2,
+        "chunks": [
+          "static/chunks/3caktg1edsts6.js 9.4KB",
+          "static/chunks/1or_3d_5y73m1.js 0.5KB",
+          "static/chunks/turbopack-3-ry682tkyiqk.js 3.8KB",
+          "static/chunks/2ewybrsuvy5ed.js 7.9KB",
+          "static/chunks/10r-_1i1ufyht.js 8.6KB",
+          "static/chunks/0zwkgt6z_hwdh.js 45.4KB",
+          "static/chunks/338jgoa0amufs.js 70.0KB",
+          "static/chunks/0l20hn6c18j3i.js 3.9KB",
+          "static/chunks/1wetqr2gkv9at.js 0.5KB",
+          "static/chunks/0gent9yiow7nl.js 1.6KB",
+          "static/chunks/2bj-9n2r-9ejv.js 4.6KB"
+        ]
+      }
+    }
+  },
+  "images": {
+    "baseline": {
+      "desktop-1440": {
+        "kb": {
+          "posters": 24.2,
+          "objects": 99.1
+        },
+        "types": "image/avif"
+      },
+      "mobile-390": {
+        "kb": {
+          "objects": 92.1,
+          "posters": 13.7
+        },
+        "types": "image/avif"
+      }
+    },
+    "branch": {
+      "desktop-1440": {
+        "kb": {
+          "objects": 16.9,
+          "posters": 24.2,
+          "motion:cards": 43,
+          "motion:heart-box": 26.1,
+          "motion:owl": 58.7,
+          "motion:pawns": 17.5
+        },
+        "types": "image/avif"
+      },
+      "mobile-390": {
+        "kb": {
+          "posters": 13.7,
+          "objects": 9.9,
+          "motion:heart-box": 20.3,
+          "motion:cards": 26.8,
+          "motion:owl": 26.5,
+          "motion:pawns": 12.9
+        },
+        "types": "image/avif"
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Headline as HeadlineType, Picture } from "@/content/types";
 import { cn } from "@/lib/cn";
 import { Headline } from "./Headline";
+import { SceneFigure } from "./motion/SceneFigure";
 
 type Crumb = { name: string; path: string };
 
@@ -72,20 +72,14 @@ export function PageHero({ eyebrow, headline, lead, crumbs = [], image, children
           {image && (
             <figure
               className={cn(
-                "fade-in col-span-4 overflow-hidden md:col-span-5",
-                image.tone === "ink" ? "bg-ink" : image.tone === "red" ? "bg-red" : "bg-cream",
+                "fade-in col-span-4 md:col-span-5",
+                // A scene brings its own field and clipping; a plain photo keeps the tone field.
+                !image.scene && "overflow-clip",
+                !image.scene && (image.tone === "ink" ? "bg-ink" : image.tone === "red" ? "bg-red" : "bg-cream"),
               )}
               style={{ ["--delay" as string]: "480ms" }}
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-                height={image.height}
-                priority
-                sizes="(min-width: 768px) 40vw, 100vw"
-                className="h-auto w-full"
-              />
+              <SceneFigure picture={image} sizes="(min-width: 768px) 40vw, 100vw" className="h-auto w-full" eager />
             </figure>
           )}
         </div>

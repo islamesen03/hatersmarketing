@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionBoundary } from "@/components/motion/MotionBoundary";
 import { PageHero } from "@/components/PageHero";
 import { ServicesList } from "@/components/ServicesList";
 import { CTASection } from "@/components/CTASection";
@@ -14,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ServicesPage() {
   return (
-    <>
+    <MotionBoundary>
       <PageHero
         eyebrow="Hizmetler"
         headline={[{ text: "Az iş." }, { text: "Net iş.", accent: true }]}
@@ -53,6 +54,6 @@ export default function ServicesPage() {
         track="services-closer"
       />
       <JsonLd data={breadcrumbJsonLd([{ name: "Hizmetler", path: "/hizmetler" }])} />
-    </>
+    </MotionBoundary>
   );
 }
