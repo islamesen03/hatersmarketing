@@ -16,7 +16,8 @@ Four photographed objects now participate in the argument as the visitor scrolls
 | Strategy service hero | Five black pawns align with a short stagger; the red pawn steps forward and grows ≤ 1.035, on the studio's cream field. |
 | Typography | `Headline enter="sides"` (diagnosis titles, closing CTAs, the service-page "Dinle. Sorgula. / Sonra yap." — the R1 reference realised with the existing content); `data-enter="left"` on section titles across home, services, approach, about, work. Contact and legal pages unchanged. |
 | Lists | Services rows and method steps stagger on the existing `[data-reveal]` timeline; method rules draw in where `view()` timelines exist. |
-| Hero, manifesto, gallery, FAQ, forms | Unchanged (the knot signature, the inversion, native scroll-snap gallery, `<details>` FAQ, lead form, consent and analytics are as before). |
+| Hero, manifesto, FAQ, forms | Unchanged (the knot signature, the inversion, `<details>` FAQ, lead form, consent and analytics are as before). |
+| Campaign gallery (home) | Left untouched by the motion work; removed afterwards on the client's request (the posters remain on `/islerimiz`). The homepage order is now hero → manifesto → diagnoses → services → method → sample deliverables → FAQ → closing CTA. |
 
 Design decisions worth knowing: scene identity is explicit content (`Picture.scene`), not derived from headings or order; every scene renders the still image on the server and only gains animation objects on the client; one driver per scene (native `ViewTimeline` or the shared scroll driver), one keyframe definition per scene; nothing is pinned.
 
