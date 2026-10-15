@@ -89,7 +89,7 @@ docs/motion/        hareket spesifikasyonu, varlık manifestosu, teslim raporu v
 
 - Her rotada benzersiz Türkçe başlık/açıklama, tek H1, canonical, OG/Twitter kartı (brand kit OG görseli), favicon + webmanifest.
 - JSON-LD: `Organization` (yalnızca doğrulanmış alanlar), `Service`, `FAQPage`, `BreadcrumbList`.
-- `lang="tr"`, içeriğe geç bağlantısı, görünür odak halkası, klavye ile kullanılabilir mobil menü (Escape, odak tuzağı), `<details>` tabanlı SSS, erişilebilir form hataları (özet + alan bazlı, `aria-invalid`/`aria-describedby`), dokunma hedefleri ≥44 px.
+- `lang="tr"`, içeriğe geç bağlantısı, görünür odak halkası, klavye ile kullanılabilir mobil menü (Escape, odak tuzağı), header'da "Hizmetler" açılır menüsü (`aria-expanded`/`aria-controls`, Escape ve dışarı tıklama ile kapanır, odak dışına çıkınca kapanır; mobil menüde iç içe hizmet listesi), `<details>` tabanlı SSS, erişilebilir form hataları (özet + alan bazlı, `aria-invalid`/`aria-describedby`), dokunma hedefleri ≥44 px.
 - Hareket: açılışta maskeli başlık animasyonu, saf CSS kaydırma animasyonları (`animation-timeline: view()`), `prefers-reduced-motion` ile kapanır; scroll-jacking ve preloader yok.
 - Kaydırma sahneleri (kalp ve kutu, baykuş, kartlar, piyonlar) ve yönlü başlık girişleri: sunucuda durağan görsel, istemcide `ViewTimeline` (yoksa paylaşılan kaydırma sürücüsü) ile Web Animations. Ayrıntılar: [docs/motion/MOTION_SPEC.md](docs/motion/MOTION_SPEC.md), katmanlar: [docs/motion/ASSET_MANIFEST.md](docs/motion/ASSET_MANIFEST.md), teslim raporu: [docs/motion/REPORT.md](docs/motion/REPORT.md).
 - Tüm sayfalar statik üretilir; görseller AVIF/WebP, lazy-load.

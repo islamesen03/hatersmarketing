@@ -36,7 +36,7 @@ Siyah hero → krem manifesto → siyah teşhis → krem hizmetler → krem yön
 
 ## Bileşenler
 
-`SiteHeader` + `HeaderNav` (mobil menü), `EditorialHero`, `Manifesto`, `Diagnoses` (ProblemPanel), `ServicesList`, `ProcessSteps`, `ProcessDemo` (CaseStudyPreview yerine dürüst örnek teslimatlar), `FAQAccordion`, `CTASection`, `LeadForm`, `SiteFooter`, `CookieConsent` + `Analytics`, `PageHero`, `LegalDocument`, `InvertedLabelAccent` (logo değil), `Logo`, `Headline`, `JsonLd`.
+`SiteHeader` + `HeaderNav` (masaüstünde "Hizmetler" altında beş hizmeti listeleyen açılır menü, mobil menüde iç içe liste), `EditorialHero`, `Manifesto`, `Diagnoses` (ProblemPanel), `ServicesList`, `ProcessSteps`, `ProcessDemo` (CaseStudyPreview yerine dürüst örnek teslimatlar), `FAQAccordion`, `CTASection`, `LeadForm`, `SiteFooter`, `CookieConsent` + `Analytics`, `PageHero`, `LegalDocument`, `InvertedLabelAccent` (logo değil), `Logo`, `Headline`, `JsonLd`.
 
 ## Analitik olayları (yalnızca onaydan sonra)
 

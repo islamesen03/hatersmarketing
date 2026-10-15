@@ -24,6 +24,14 @@ export function Plus({ className }: IconProps) {
   );
 }
 
+export function Chevron({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={className}>
+      <path d="M5 9l7 7 7-7" stroke="currentColor" strokeWidth="2.25" strokeLinecap="square" />
+    </svg>
+  );
+}
+
 export function Close({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={className}>
